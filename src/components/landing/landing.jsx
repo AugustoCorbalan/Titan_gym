@@ -4,6 +4,7 @@ export const Landing = ()=>{
             <div className= 'container_title_callToAction'>
                 <span>CONOCE TUS LIMITES</span>
                 <span>Y DESPUES DESAFIALOS</span>
+                <button>EMPEZAR</button>
             </div>
         </div>
     )
