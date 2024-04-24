@@ -1,0 +1,20 @@
+
+// UI Settings
+@import './base/settings';
+@font-face {
+    font-family: 'Watone';
+    src: url('../assets/fonts/Watone.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+   font-family: 'Open Sans Hebrew';
+   src: url('../assets/fonts/OpenSansHebrew-BoldItalic.ttf');
+   font-style: normal;
+   font-weight: normal;
+}
+// Components
+@import './base/app';
+@import './components/navbar';
+@import './components/landing';
+// Screens

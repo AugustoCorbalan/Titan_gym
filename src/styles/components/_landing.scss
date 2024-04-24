@@ -1,0 +1,41 @@
+.landing_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    .container_title_callToAction{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 3rem;
+        width: 80%;
+        height: 45vh;
+        span{
+            font-family: 'Open Sans Hebrew';
+            font-style: italic;
+            font-size: 4.6rem;
+            color: $primaryColor;
+        }
+        span:nth-child(2){
+            color: transparent;
+            -webkit-text-stroke: $primaryColor 1px ;
+        }
+
+    }
+}
+.landing_container::before{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../../assets/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center center ;
+    background-size: 85vw;
+    opacity: 45%;
+}

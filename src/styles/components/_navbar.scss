@@ -1,0 +1,37 @@
+.navbar_container{
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    height: 4.37em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $blackColor;
+    padding: 0 2.56em 0 2.56em;
+    .container_logo{
+        width: 25%;
+        img{
+            height: 2.56em;
+        }
+    }
+    .container_a{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        font-family:'Watone';
+        font-style: italic;
+        font-size: 1.25em;
+        a{
+            color: $primaryColor;
+        }
+    }
+    .container_icons{
+        display: flex;
+        justify-content: flex-end;
+        width: 25%;
+        img{
+            height: 1.87em;
+        }
+    }
+}
