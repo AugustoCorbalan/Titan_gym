@@ -1,0 +1,52 @@
+.about_container{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 4.37rem);
+    width: 100%;
+    .container_description{
+        height: 100%;
+        width: 50%;
+        padding-left: 4em;
+        padding-top: 4rem;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // border: 1px solid white;
+            height: 65%;
+            h2{
+                margin: 0;
+                color: $primaryColor;
+                font-family: 'Watone';
+                font-style: italic;
+                font-size: 4.3em;
+                font-weight: 100;
+            }
+            p{
+                color: white;
+                font-family: 'Open Sans Hebrew';
+                font-weight: 100;
+            }
+        }
+        span{
+            color: white;
+            font-family: 'Open Sans Hebrew';
+            font-weight: 100;
+        }
+    }
+    .container_images{
+        display: flex;
+        align-items: space-between;
+        justify-content: space-between;
+        padding: 4em 4em 2em 4em;
+        // border: 1px solid green;       
+        width: 50%;
+        height: 100%;
+        img{
+            height: 65%;
+        }
+        img:nth-child(2){
+            align-self: flex-end;
+        }
+    }
+}
