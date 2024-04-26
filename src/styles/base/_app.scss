@@ -4,3 +4,14 @@
 body{
     background-color: black;
 }
+body::-webkit-scrollbar{
+    width: 6px;
+  }
+body::-webkit-scrollbar-thumb{
+background-color: $primaryColor;
+// border: 1px solid #9a6210;
+border-radius: 0.125em;
+}
+body::-webkit-scrollbar-thumb:hover{
+background-color: #9a6210;
+}
