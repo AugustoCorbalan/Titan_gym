@@ -1,6 +1,7 @@
 import {Navbar} from './components/navbar/navbar.jsx';
 import {Landing} from './components/landing/landing.jsx';
 import {About} from './components/about/about.jsx';
+import { Services } from './components/services/services.jsx';
 function App() {
   return (
     <div className='app_container'>
@@ -9,6 +10,7 @@ function App() {
       </header>
       <Landing/>
       <About/>
+      <Services/>
     </div>
   );
 }
