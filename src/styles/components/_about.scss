@@ -8,11 +8,14 @@
         width: 50%;
         padding-left: 4em;
         padding-top: 4rem;
+        color: white;
+        font-family: 'Open Sans Hebrew';
+        font-style: italic;
+        font-weight: 400;
         div{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            // border: 1px solid white;
             height: 65%;
             h2{
                 margin: 0;
@@ -22,16 +25,6 @@
                 font-size: 4.3em;
                 font-weight: 100;
             }
-            p{
-                color: white;
-                font-family: 'Open Sans Hebrew';
-                font-weight: 100;
-            }
-        }
-        span{
-            color: white;
-            font-family: 'Open Sans Hebrew';
-            font-weight: 100;
         }
     }
     .container_images{

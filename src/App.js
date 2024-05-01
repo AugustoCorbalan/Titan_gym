@@ -3,6 +3,7 @@ import {Landing} from './components/landing/landing.jsx';
 import {About} from './components/about/about.jsx';
 import {Services} from './components/services/services.jsx';
 import {TimeTable} from './components/timeTable/timeTable.jsx';
+import {Footer} from './components/footer/footer.jsx';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <About/>
       <Services/>
       <TimeTable/>
+      <Footer/>
     </div>
   );
 }
