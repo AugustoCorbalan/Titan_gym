@@ -18,32 +18,108 @@
         align-items: center;
         height: 100%;
         width: 100%;
-        div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
+        .container_card_inner{
+            width: 100%;
+            height: 100%;
             font-family: 'Open Sans Hebrew';
             font-style: italic;
             font-size: 1.25em;
             font-weight: bold;
             border-radius: 0.2em;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            div{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+            .front-end, .back-end{
+                box-shadow: 0 0px 14px 0 rgba(255, 255, 255, 0.121);
+                position: relative;
+                backface-visibility: hidden;
+            }
+            .front-end{
+                border-radius: 5px;
+            }
+            .back-end{
+                top: -23.75rem;
+                transform: rotateY(180deg);
+                border-radius: 5px;
+                background-image: url('../../assets/images/background_card.svg');
+                background-size: contain;
+                .container_info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 100%;
+                    width: 100%;
+                    padding: 1.5rem 0 1.5rem 0; 
+                    .container_title{
+                        height: 15%;
+                        h3{
+                            font-family: 'Watone';
+                            color: $primaryColor;
+                            font-size: 1.8rem;
+                            font-weight: 100;
+                        }
+                    }
+                    .container_description{
+                        // border: 1px solid red;
+                        height: 70%;
+                        li{
+                            margin-bottom: 0.5rem;
+                            font-family: 'Open Sans Hebrew';
+                            font-size: 0.9rem;
+                            font-weight: 400;
+                        }
+                    }
+                    .container_button{
+                        height: 15%;
+                        button{
+                            background-color: $primaryColor;
+                            border: none;
+                            width: 60%;
+                            height: 60%;
+                            font-family: 'Watone';
+                            font-weight: 100;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+            }
         }
-        div:nth-child(1){
+        .container_card_vertical{
+            width: 15.45rem;
+            height: 23.75rem;
+            perspective: 1000px;
+        }
+        .container_card_horizontal{
+            height: 15.45rem;
+            width: 23.75rem;
+            perspective: 1000px;
+            .back-end{
+                top: -15.45rem;
+                transform: rotateX(180deg);
+            }
+        }
+        #personalizado_front{
             background-image: url('../../assets/images/service1.png');
             background-size: contain;
             background-position: center;
             width: 23.25rem;
             height: 15.45rem;
         }
-        div:nth-child(2){
+        #total_body_front{
             background-image: url('../../assets/images/service2.png');
             background-size: contain;
             background-position: center;
-            width: 15.45rem;
-            height: 23.75rem;
+            
         }
-        div:nth-child(3){
+        #boxeo_front{
             background-image: url('../../assets/images/service3.png');
             background-size: contain;
             background-position: center;
@@ -51,4 +127,11 @@
             height: 15.45rem;
         }
     }
+    .container_card_vertical:hover .container_card_inner{
+        transform: rotateY(180deg);
+    }
+    .container_card_horizontal:hover .container_card_inner{
+        transform: rotateX(180deg);
+    }
+
 }
