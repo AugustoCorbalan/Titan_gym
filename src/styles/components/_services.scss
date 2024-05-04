@@ -37,7 +37,7 @@
                 color: white;
             }
             .front-end, .back-end{
-                box-shadow: 0 0px 14px 0 rgba(255, 255, 255, 0.121);
+                box-shadow: 0 0px 14px 0 rgba(255, 255, 255, 0.09);
                 position: relative;
                 backface-visibility: hidden;
             }
@@ -56,7 +56,8 @@
                     justify-content: space-between;
                     height: 100%;
                     width: 100%;
-                    padding: 1.5rem 0 1.5rem 0; 
+                    padding: 1.5rem 0.5rem 1.5rem 0; 
+                    background-color: rgba(0, 0, 0, 0.3);
                     .container_title{
                         height: 15%;
                         h3{
@@ -67,13 +68,12 @@
                         }
                     }
                     .container_description{
-                        // border: 1px solid red;
                         height: 70%;
                         li{
                             margin-bottom: 0.5rem;
                             font-family: 'Open Sans Hebrew';
-                            font-size: 0.9rem;
-                            font-weight: 400;
+                            font-size: 0.95rem;
+                            font-weight: 100;
                         }
                     }
                     .container_button{
@@ -81,8 +81,8 @@
                         button{
                             background-color: $primaryColor;
                             border: none;
-                            width: 60%;
-                            height: 60%;
+                            width: 9rem;
+                            height: 2rem;
                             font-family: 'Watone';
                             font-weight: 100;
                             font-size: 1.2rem;
@@ -104,13 +104,16 @@
             .back-end{
                 top: -15.45rem;
                 transform: rotateX(180deg);
+                .container_info{
+                    padding: 0.8rem 0.6rem 1rem 0.6rem;
+                }
             }
         }
         #personalizado_front{
             background-image: url('../../assets/images/service1.png');
-            background-size: contain;
+            background-size: cover;
             background-position: center;
-            width: 23.25rem;
+            width: 23.75rem;
             height: 15.45rem;
         }
         #total_body_front{
@@ -121,10 +124,10 @@
         }
         #boxeo_front{
             background-image: url('../../assets/images/service3.png');
-            background-size: contain;
+            background-size: cover;
             background-position: center;
             width: 23.25rem;
-            height: 15.45rem;
+            height: 15.75rem;
         }
     }
     .container_card_vertical:hover .container_card_inner{

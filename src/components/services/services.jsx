@@ -9,7 +9,21 @@ export const Services = ()=>{
                             <span>ENTRENAMIENTO <br/> PERSONALIZADO</span>
                         </div>
                         <div className="back-end">
-                            <span>BACK  </span>
+                            <div className="container_info">
+                                <div className="container_title">
+                                    <h3> ENTRENAMIENTO PERSONALIZADO</h3>
+                                </div>
+                                <div className="container_description">
+                                    <ul>
+                                        <li>Atención individualizada adaptada a tus necesidades y metas específicas.</li>
+                                        <li>Seguimiento detallado de tu progreso.</li>
+                                        <li>Corrección de la técnica para prevenir lesiones y un mayor rendimiento.</li>
+                                    </ul>
+                                </div>
+                                <div className="container_button">
+                                    <button>MAS INFO</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,7 +59,21 @@ export const Services = ()=>{
                             <span>BOXEO</span>
                         </div>
                         <div className="back-end">
-                            <span>BACK  </span>
+                        <div className="container_info">
+                                <div className="container_title">
+                                    <h3>BOXEO</h3>
+                                </div>
+                                <div className="container_description">
+                                    <ul>
+                                        <li>Desarrollo de fuerza, resistencia y velocidad, y mejoras en la coordinación y agilidad.</li>
+                                        <li>Excelente ejercicio cardiovascular que ayuda a quemar calorías.</li>
+                                        <li>Aumenta la confianza en uno mismo, reduce el estrés y mejora la concentración y la disciplina.</li>
+                                    </ul>
+                                </div>
+                                <div className="container_button">
+                                    <button>MAS INFO</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
