@@ -36,3 +36,12 @@
         }
     }
 }
+
+@media (max-width: 720px){
+    .navbar_container{
+        width: 100vw;
+        .container_a{
+            display: none;
+        }
+    }
+}

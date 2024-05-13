@@ -13,9 +13,9 @@ function App() {
       </header>
       <Landing/>
       <About/>
-      <Services/>
+      {/* <Services/>
       <TimeTable/>
-      <Footer/>
+      <Footer/> */}
     </div>
   );
 }
