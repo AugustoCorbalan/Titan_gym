@@ -8,10 +8,13 @@ export const About = ()=>{
                 <div>
                     <h2>LA COMUNIDAD <br/>TITANES</h2>
                     <p> 
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        La comunidad de TITANES esta formada por varios grupos mixtos de compañeros que se reúnen regularmente, para entrenar juntos.  💪🏼🏋🏻‍♂🏋🏻‍♀<br/>
+                        Son animados y sociables, comparten risas, bromas, conversaciones y experiencias personales mientras entrenan!<br/>
+                        Debes en cuando compiten entre ellos! 💪🏼😏<br/>
+                        Son una pequeña comunidad dentro del gimnasio, donde el compañerismo y el apoyo mutuo son importantes! 👍🏼🫂<br/>
+                        Y.. pasar tiempo juntos, dentro y fuera del ambiente de entrenamiento, también está bueno! <br/>
                     </p>
                 </div>
-                <span>Saber más..</span>
              </div>
              <div className = "container_images">
                 <img src={about_1} alt="Imagen ilustrativa 1" />

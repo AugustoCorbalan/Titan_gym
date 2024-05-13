@@ -1,18 +1,25 @@
 .landing_container{
-
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 4.37rem);
+    margin-top: 5em;
+    // border: 1px solid cyan;
     .container_title_callToAction{
         position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding-top: 5em;
         width: 80%;
+        // border: 1px solid green ;
+        .container_title{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            // border: 1px solid red;
+        }
         span{
             font-family: 'Open Sans Hebrew';
             font-style: italic;
@@ -29,17 +36,20 @@
             border: none;
             width: 12rem;
             height: 3.2rem;
-            border-radius: 1px;
+            border-radius: 5px;
             font-family: 'Watone';
             font-style: italic;
             font-size: 1.5rem;
             color: black;
-            margin-top: 3em;
+            margin-top: 4em;
         }
     }
-    .contact_containers{
+    .contacts_icons{
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 91%;
+        top: 40%;
+        left: 107%;
         width: 2.3rem;
         height: 2.3rem;
         a{
@@ -69,4 +79,47 @@
     background-position: center center ;
     background-size: 85vw;
     opacity: 45%;
+}
+
+@media (max-width: 720px){
+    .landing_container::before{
+        background-image: url('../../assets/images/background_mobile.png');
+        opacity: 100%;
+        background-size: auto 68%;
+        background-position: left center;
+    }
+    .landing_container{
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-right: 2rem;
+        .container_title_callToAction{
+            align-items: flex-end;
+            justify-content: space-between;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            height: calc(100% - 4.37rem);
+            width: calc(100% - 2rem);
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            span{
+                display: flex;
+                justify-content: flex-end;
+                font-size: 2.5rem;
+                width: 100%;
+            }
+            span:nth-child(2){
+                width: 50%;
+            }
+            button{
+                align-self: flex-end;
+            }
+            .contacts_icons{
+                top: 45%;
+                left: 90%
+            }
+        }
+    }
 }
