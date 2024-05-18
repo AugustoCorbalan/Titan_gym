@@ -11,7 +11,7 @@ export const Services = ()=>{
                         <div className="back-end">
                             <div className="container_info">
                                 <div className="container_title">
-                                    <h3> ENTRENAMIENTO PERSONALIZADO</h3>
+                                    <h3> ENTRENAMIENTO <br/> PERSONALIZADO</h3>
                                 </div>
                                 <div className="container_description">
                                     <ul>

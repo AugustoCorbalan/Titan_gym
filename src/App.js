@@ -13,8 +13,8 @@ function App() {
       </header>
       <Landing/>
       <About/>
-      {/* <Services/>
-      <TimeTable/>
+      <Services/>
+      {/* <TimeTable/>
       <Footer/> */}
     </div>
   );

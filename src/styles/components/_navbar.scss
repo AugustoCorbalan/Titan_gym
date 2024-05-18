@@ -16,6 +16,9 @@
             height: 2.56em;
         }
     }
+    .container_a_mobile{
+        display: none;
+    }
     .container_a{
         display: flex;
         justify-content: space-around;
@@ -39,9 +42,38 @@
 
 @media (max-width: 720px){
     .navbar_container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         width: 100vw;
+        padding: 0 0 0 1rem;
+        .container_logo{
+            align-self: flex-start;
+            width: auto;
+        }
         .container_a{
             display: none;
+        }
+        .container_a_mobile{
+            display: block;
+            align-self: flex-end;
+            button{
+                background-color: transparent;
+                border: none;
+            }
+            img{
+                height: 2.4rem;
+            }
+        }
+        .container_icons{
+            position: absolute;
+            align-self: center;
+            width: auto;
+            img{
+                height: 2.5rem;
+            }
         }
     }
 }
