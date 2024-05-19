@@ -10,16 +10,30 @@ export const Footer = ()=>{
                 <div className="container_1">
                     <a href='https://wa.me/543547579422' target='_blanck'>
                         <img src={whatsapp_icon} alt="icon Whatsapp" />
-                        3547-579422
+                        <span>3547-579422</span>
                     </a>
                     <a href='https://www.instagram.com/titan_espacio_fitness?igsh=MTltdGZnMWE0N3J0dQ==' target='_blanck'>
                         <img src={instagram_icon} alt="icon Instagram" />
-                        titan_espacio_fitness
+                        <span>titan_espacio_fitness</span>
                     </a>
                     <a>
                         <img src={map_pin_icon} alt="icon Map" />
-                        Prudencio Bustos 257 - Alta Gracia
+                        <span>Prudencio Bustos 257 - Alta Gracia</span>
                     </a>
+                </div>
+                <div className="container_1_mobile">
+                    <h2>Contactos:</h2>
+                    <div>
+                        <a href='https://wa.me/543547579422' target='_blanck'>
+                            <img src={whatsapp_icon} alt="icon Whatsapp" />
+                        </a>
+                        <a href='https://www.instagram.com/titan_espacio_fitness?igsh=MTltdGZnMWE0N3J0dQ==' target='_blanck'>
+                            <img src={instagram_icon} alt="icon Instagram" />
+                        </a>
+                        <a>
+                            <img src={map_pin_icon} alt="icon Map" />
+                        </a>
+                    </div>
                 </div>
                 <div className="container_2">
                     <img src={logo_titan_black} alt="Logo gimnasio Titan" />

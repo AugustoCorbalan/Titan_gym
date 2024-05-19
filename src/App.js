@@ -14,8 +14,8 @@ function App() {
       <Landing/>
       <About/>
       <Services/>
-      {/* <TimeTable/>
-      <Footer/> */}
+      <TimeTable/>
+      <Footer/>
     </div>
   );
 }
