@@ -18,10 +18,10 @@ export const Footer = ()=>{
                     </a>
                     <a>
                         <img src={map_pin_icon} alt="icon Map" />
-                        <span>Prudencio Bustos 257 - Alta Gracia</span>
+                        <span>Prudencio Bustos 257 - AG</span>
                     </a>
                 </div>
-                <div className="container_1_mobile">
+                {/* <div className="container_1_mobile">
                     <h2>Contactos:</h2>
                     <div>
                         <a href='https://wa.me/543547579422' target='_blanck'>
@@ -34,7 +34,7 @@ export const Footer = ()=>{
                             <img src={map_pin_icon} alt="icon Map" />
                         </a>
                     </div>
-                </div>
+                </div> */}
                 <div className="container_2">
                     <img src={logo_titan_black} alt="Logo gimnasio Titan" />
                 </div>
