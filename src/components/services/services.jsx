@@ -2,6 +2,12 @@ export const Services = ()=>{
     return(
         <div className="services_container">
             <h2>¿Que ofrecemos? </h2>
+            <div className="container_title_mobile">
+                <div></div>
+                <div>
+                    <h2>¿Que <br/>ofrecemos? </h2>
+                </div>
+            </div>
             <div className="container_cards">
                 <div className="container_card_horizontal">
                     <div className="container_card_inner">

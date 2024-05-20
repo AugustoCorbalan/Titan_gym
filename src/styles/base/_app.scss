@@ -3,6 +3,8 @@
 }
 body{
     background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar{
     width: 6px;
@@ -17,6 +19,11 @@ background-color: #9a6210;
 }
 
 @media (min-width: 0px){
+    html{
+        font-size: 12px;
+    }
+}
+@media (min-width: 430px){
     html{
         font-size: 14px;
     }
