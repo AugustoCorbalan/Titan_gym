@@ -45,6 +45,9 @@
         }
     }
 }
+.about_container_mobile{
+    display: none;
+}
 
 @media (max-width: 720px){
     .about_container_desktop{
