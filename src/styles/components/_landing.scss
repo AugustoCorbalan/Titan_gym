@@ -3,7 +3,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    min-height: 35rem;
     height: calc(100vh - 4.37rem);
+    // max-height: 40rem;
     margin: 0;
     margin-top: 5em;
     // border: 1px solid cyan;
@@ -69,6 +71,7 @@
 }
 .landing_container::before{
     z-index: -1;
+    min-height: 35rem;
     content: "";
     position: absolute;
     top: 5rem;
@@ -84,12 +87,16 @@
 
 @media (max-width: 720px){
     .landing_container::before{
+        min-height: initial;
+        max-height: initial;
         background-image: url('../../assets/images/background_mobile.png');
         opacity: 100%;
         background-size: auto 68%;
         background-position: left center;
     }
     .landing_container{
+        min-height: initial;
+        max-height: initial;
         justify-content: flex-end;
         align-items: flex-start;
         padding-right: 2rem;
@@ -99,6 +106,7 @@
             justify-content: space-between;
             padding-top: 3rem;
             padding-bottom: 3rem;
+            min-height: 35rem;
             height: calc(100% - 4.37rem);
             width: calc(100% - 2rem);
             div{

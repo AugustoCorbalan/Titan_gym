@@ -1,8 +1,11 @@
 .about_container_desktop{
     display: flex;
     align-items: center;
+    min-height: 35rem;
     height: calc(100vh - 4.37rem);
+    max-height: 40rem;
     width: 100%;
+    // border: 1px solid red;
     .container_description{
         height: 100%;
         width: 50%;
@@ -31,14 +34,18 @@
         display: flex;
         align-items: space-between;
         justify-content: space-around;
-        padding: 4em 4em 2em 4em;
-        // border: 1px solid green;       
+        padding: 4em 4em 2em 4em;    
         width: 50%;
         height: 100%;
+        // border: 1px solid red;
         img{
-            height: 70%;
+            max-height: 27.5rem;
+            max-width: 50%;
             margin: 2rem 2rem 2rem 0rem;
             border-radius: 5px;
+        }
+        img:nth-child(1){
+            align-self: flex-start;
         }
         img:nth-child(2){
             align-self: flex-end;
@@ -69,7 +76,7 @@
         .container_images{
             position: relative;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             top: -1rem;
             height: 23rem;
             img{
@@ -92,49 +99,3 @@
         }
     }
 }
-
-// @media (max-width: 720px) {
-//     .about_container{
-//         border: 1px solid green;
-//         .container_description_desktop{
-//             display: none;
-//         }
-//         .container_description_mobile{
-//             width: 100%;
-//             // border: 1px solid red;
-//             justify-content: center;
-//             padding: 1rem 1.2rem 1rem 1.2rem;
-//             div{
-//                 width: 100%;
-//                 height: 95%;
-//                 display: flex;
-//                 flex-direction: column;
-//                 justify-content: space-between;
-//                 // border: 1px solid cyan;
-//                 h2{
-//                     font-size: 3.5rem;
-                    
-//                 }
-//                 p{
-//                     font-size: 1.2rem;
-//                 }
-//             }
-//         }
-//         .container_images{
-            
-//             border: 1px solid red;
-//             img{
-//                 // position: absolute;
-//                 height: 20rem;
-//             }
-//             // img:nth-child(1){
-//             //     left: 1.1rem;
-//             //     top: 9rem;
-//             // }
-//             // img:nth-child(2){
-//             //     top: 6rem;
-//             //     left: 14rem;
-//             // }
-//         }
-//     }
-// }
