@@ -1,7 +1,7 @@
 export const TotalBody = ()=>{
     return(
-        <div className="container_card_inner">
-            <div id="total_body_front" className="front-end">
+        <div id="total_body_card" className="container_card_inner">
+            <div className="front-end">
                 <span>TOTAL BODY</span>
             </div>
             <div className="back-end">

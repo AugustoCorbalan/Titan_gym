@@ -1,7 +1,7 @@
 .services_container{
     min-height: 35rem;
     height: calc(100vh - 4.37rem);
-    max-height: 40rem;
+    max-height: 50rem;
     width: 100%; 
     h2{
         margin: 2.5rem 0 0 0;
@@ -53,7 +53,7 @@
                 top: -23.75rem;
                 transform: rotateY(180deg);
                 border-radius: 5px;
-                background-image: url('../../assets/images/background_card.svg');
+                background-image: url('../../assets/images/background_card.jpg');
                 background-size: contain;
                 height: 100%;
                 .container_info{
@@ -62,8 +62,10 @@
                     justify-content: space-between;
                     height: 100%;
                     width: 100%;
+                    border-radius: 5px;
+
                     padding: 1.5rem 0.5rem 1.5rem 0; 
-                    background-color: rgba(0, 0, 0, 0.3);
+                    background-color: rgba(0, 0, 0, 0.5);
                     .container_title{
                         align-items: center;
                         height: 15%;
@@ -72,6 +74,7 @@
                             color: $primaryColor;
                             font-size: 1.8rem;
                             font-weight: 100;
+                            margin: 0;
                         }
                     }
                     .container_description{
@@ -93,6 +96,7 @@
                             font-family: 'Watone';
                             font-weight: 100;
                             font-size: 1.2rem;
+                            border-radius: 0.2rem;
                         }
                     }
                 }
@@ -116,25 +120,33 @@
                 }
             }
         }
-        #personalizado_front{
-            background-image: url('../../assets/images/service1.png');
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-            height: 100%;
+        #personalizado_card{
+            .front-end{
+                background-image: url('../../assets/images/service1.png');
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 100%;
+            }
+            .mobile{
+                display: none;
+            }
         }
-        #total_body_front{
-            background-image: url('../../assets/images/service2.png');
-            background-size: contain;
-            background-position: center;
-            
+        #total_body_card{
+            .front-end{
+                background-image: url('../../assets/images/service2.png');
+                background-size: contain;
+                background-position: center;
+            }
         }
-        #boxeo_front{
-            background-image: url('../../assets/images/service3.png');
-            background-size: cover;
-            background-position: center;
-            width: 23.25rem;
-            height: 15.75rem;
+        #boxeo_card{
+            .front-end{
+                background-image: url('../../assets/images/service3.png');
+                background-size: cover;
+                background-position: center;
+                width: 23.25rem;
+                height: 15.75rem;
+            }
         }
     }
     .container_card_vertical:hover .container_card_inner{
@@ -168,8 +180,8 @@
                     h3{
                         font-family: 'Watone';
                         color: $primaryColor;
-                        font-size: 1.8rem;
-                        font-weight: 100;
+                        font-size: 2.2rem !important;
+                        font-weight: 400;
                     }
                 }
                 .container_description{
@@ -180,8 +192,8 @@
                     li{
                         margin-bottom: 0.5rem;
                         font-family: 'Open Sans Hebrew';
-                        font-size: 4rem;
-                        font-weight: 800;
+                        font-size: 1rem !important;
+                        font-weight: 600 !important;
                     }
                 }
                 .container_button{
@@ -245,34 +257,76 @@
                         }
                     }
                 }
-                #personalizado_front{
-                    background-size: 30rem 23.75rem ;
-                    background-position: -10rem center;
+                #personalizado_card{
+                    .front-end{
+                        background-size: 30rem 23.75rem ;
+                        background-position: -10rem center;
+                    }
+                    .container_title{
+                        height: auto !important;
+                    }
+                    .container_description{
+                        height: auto !important;
+                        ul{
+                            margin: 0;
+                        }
+                    }
+                    .mobile{
+                        display: flex;
+                    }
+                    .desktop{
+                        display: none;
+                    }
                 }
-                #boxeo_front{
-                    background-size: cover;
-                    background-position: center;
-                    height: 23.25rem;
-                    width: 15.75rem;
+                #boxeo_card{
+                    .front-end{
+                        background-size: cover;
+                        background-position: center;
+                        height: 23.25rem;
+                        width: 15.75rem;
+                    }
                 }
-                #total_body_front{
-                    background-size: contain;
-                    background-position: center;           
+                #total_body_card{
+                    .front-end{
+                        background-size: contain;
+                        background-position: center;           
+                    }
                 }
                 .container_card_vertical{
-                    // position: absolute;
                     margin-top: 1rem;
                     scale: 0.90;
                 }
             }
             .container_card_vertical:hover .container_card_inner{
                 transform: rotateY(180deg);
-                scale: 1.1;
+                scale: 1.2;
             }
             .container_card_horizontal:hover .container_card_inner{
                 transform: rotateY(180deg);
-                scale: 1.1;
+                scale: 1.2;
             }
         }
+    }
+}
+@media (max-width: 330px) {
+    .services_container_mobile{
+        .container_cards{
+            .container_card_inner{
+                .back-end{
+                    .container_description{
+                        li{
+                            font-size: 1rem !important;
+                            // color: red;
+                        }
+                    }
+                }
+            }
+        }
+        // .container_card_vertical:hover .container_card_inner{
+        //     scale: 1.5 !important;
+        // }
+        // .container_card_horizontal:hover .container_card_inner{
+        //     scale: 1.5 !important;
+        // }
     }
 }

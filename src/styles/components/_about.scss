@@ -3,9 +3,8 @@
     align-items: center;
     min-height: 35rem;
     height: calc(100vh - 4.37rem);
-    max-height: 40rem;
+    max-height: 50rem;
     width: 100%;
-    // border: 1px solid red;
     .container_description{
         height: 100%;
         width: 50%;
@@ -37,7 +36,7 @@
         padding: 4em 4em 2em 4em;    
         width: 50%;
         height: 100%;
-        // border: 1px solid red;
+        max-height: 40rem;
         img{
             max-height: 27.5rem;
             max-width: 50%;
@@ -49,6 +48,7 @@
         }
         img:nth-child(2){
             align-self: flex-end;
+            margin-top: 2rem;
         }
     }
 }
@@ -96,6 +96,13 @@
             font-style: italic;
             font-size: 1.2rem;
             font-weight: 400;
+        }
+    }
+}
+@media (max-width: 330px){
+    .about_container_mobile{
+        p{
+            font-size: 1.4rem;
         }
     }
 }
