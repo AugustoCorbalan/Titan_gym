@@ -10,8 +10,9 @@ export const Navbar = ()=>{
             </div>
             <div className='container_a'>
                 <a href='#about_section'>¿Quienes Somos?</a>
-                <a>Tienda</a>
                 <a href='#trainings_section'>Entrenamientos</a>
+                <a href='#hours_section'>Horarios</a>
+                <a>Tienda</a>
             </div>
             <div className='container_a_mobile'>
                 <button>
