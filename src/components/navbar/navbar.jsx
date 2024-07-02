@@ -9,9 +9,9 @@ export const Navbar = ()=>{
                 <img src={primaryLogo} alt="Logotipo de marca"/>
             </div>
             <div className='container_a'>
-                <a>¿Quienes Somos?</a>
+                <a href='#about_section'>¿Quienes Somos?</a>
                 <a>Tienda</a>
-                <a>Entrenamientos</a>
+                <a href='#trainings_section'>Entrenamientos</a>
             </div>
             <div className='container_a_mobile'>
                 <button>

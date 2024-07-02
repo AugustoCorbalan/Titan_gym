@@ -3,7 +3,7 @@ import about_2 from '../../assets/images/about_2.png';
 
 export const About = ()=>{
     return(
-        <>
+        <section id='about_section'>
             <div className = "about_container_desktop">
                 <div className = "container_description">
                     <div>
@@ -36,6 +36,6 @@ export const About = ()=>{
                     Y.. pasar tiempo juntos, dentro y fuera del ambiente de entrenamiento, también está bueno! <br/>
                 </p>
             </div>
-        </>
+        </section>
     )
 }
