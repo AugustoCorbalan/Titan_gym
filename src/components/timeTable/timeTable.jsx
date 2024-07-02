@@ -13,6 +13,9 @@ export const TimeTable = ()=>{
             <div className='container_table_references_desktop'>
                 <div className='container1'>
                     <Filters setDisciplineSelected={setDisciplineSelected}/>
+                    <a className= "callToAction" href='https://wa.me/543547579422' target='_blanck'>
+                        CONSULTAR
+                    </a>
                 </div>
                 <Table disciplineSelected={disciplineSelected}/>
                 <div className='container_references'>

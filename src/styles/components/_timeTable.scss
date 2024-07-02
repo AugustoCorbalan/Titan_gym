@@ -25,11 +25,34 @@
         min-height: 90%;
         .container1{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             width: 20%;
             min-height: 100%;
             padding-top: 5rem;
+            .callToAction{
+                display: flex;
+                align-self: flex-start;
+                justify-content: center;
+                align-items: center;
+                background-color: $primaryColor;
+                border: none;
+                width: 12rem;
+                height: 3.2rem;
+                border-radius: 5px;
+                font-family: 'Watone';
+                font-style: italic;
+                font-size: 1.7rem;
+                color: black;
+                margin-top: 4em;
+                margin-left: 2.5rem;
+                text-decoration: none;
+            }
+            .callToAction:hover{
+                scale: 0.97;
+                background-color: $primaryColorHover;
+            }
         }
         .container_references{
             display: flex;
@@ -88,7 +111,6 @@
     align-items: flex-start;
     width: 100%;
     min-height: 10rem;
-    // border: 1px solid red;
     padding-left: 2.5rem;
     h3{
         color: white;
