@@ -1,4 +1,5 @@
 import whatsapp_icon from '../../assets/icons/whatsapp_yellow.svg';
+import whatsapp_icon_black from '../../assets/icons/whatsapp_black.svg';
 import instagram_icon from '../../assets/icons/instagram_yellow.svg';
 
 export const Landing = ()=>{
@@ -17,7 +18,9 @@ export const Landing = ()=>{
                         <img src={instagram_icon} alt="icon Instagram" />
                     </a>
                 </div>
-                <button>EMPEZAR</button>
+                <a className= "callToAction" href='https://wa.me/543547579422' target='_blanck'>
+                        CONSULTAR
+                </a>
             </div>
         </div>
     )

@@ -34,7 +34,10 @@
             color: transparent;
             -webkit-text-stroke: $primaryColor 1px ;
         }
-        button{
+        .callToAction{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-color: $primaryColor;
             border: none;
             width: 12rem;
@@ -42,9 +45,10 @@
             border-radius: 5px;
             font-family: 'Watone';
             font-style: italic;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             color: black;
             margin-top: 4em;
+            text-decoration: none;
         }
     }
     .contacts_icons{
