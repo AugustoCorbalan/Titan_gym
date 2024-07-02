@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {trainings, hours} from './data.js';
 import arrow_down from '../../../assets/icons/arrow_down.svg';
 
@@ -8,6 +8,21 @@ export const Filters = ({setDisciplineSelected}) =>{
     const [hour, setHour] = useState(hours.noSelected);
     const [menuVisibleTraining, setMenuVisibleTraining] = useState(false);
     const [menuVisibleHour, setMenuVisibleHour] = useState(false);
+
+    useEffect(()=>{
+        const body = document.querySelector("body");
+        const handlerClick = (event)=>{
+            const container_filters = document.querySelector(".container_filters");
+            if (!container_filters.contains(event.target)){
+                setMenuVisibleTraining(false);
+                setMenuVisibleHour(false);
+            }
+        }
+        body.addEventListener("click", handlerClick);
+        return ()=>{
+            body.removeEventListener("click", handlerClick)
+        }
+    },[])
 
     const handlerClickVisibleTraining = ()=>{
         setMenuVisibleTraining(!menuVisibleTraining);
