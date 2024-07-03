@@ -13,7 +13,7 @@ export const Filters = ({setDisciplineSelected}) =>{
         const body = document.querySelector("body");
         const handlerClick = (event)=>{
             const container_filters = document.querySelector(".container_filters");
-            if (!container_filters.contains(event.target)){
+            if(!container_filters.contains(event.target)){
                 setMenuVisibleTraining(false);
                 setMenuVisibleHour(false);
             }
@@ -42,47 +42,51 @@ export const Filters = ({setDisciplineSelected}) =>{
     }
     return(
         <div className="container_filters">
-            <h3>Elgir entrenamiento:</h3>
-            <button className="button_selection" onClick={handlerClickVisibleTraining}>
-                <div className="image_container">
-                    <img src={training.image} alt="Icono de la disciplina"/>
+            <div>
+                <h3>Elgir entrenamiento:</h3>
+                <button className="button_selection" onClick={handlerClickVisibleTraining}>
+                    <div className="image_container">
+                        <img src={training.image} alt="Icono de la disciplina"/>
+                    </div>
+                    <span>{training? training.name : ""}</span>
+                    <div className="image_container">
+                        <img src={arrow_down} alt="Icono desplegable"/>
+                    </div>
+                </button>
+                <div className={ menuVisibleTraining ? "dropdown_menu_training" : "dropdown_menu_notVisible" }>
+                    {
+                        Object.keys(trainings).map((el)=>{   
+                            return(
+                                <button className="button_selection" onClick={()=> handlerClickSelectTraining(trainings[el])}>
+                                    <div className="image_container">
+                                        <img src={trainings[el].image} alt="Icono de la disciplina"/>
+                                    </div>
+                                    <span>{trainings[el].name}</span>
+                                </button>
+                            )
+                        })
+                    }
                 </div>
-                <span>{training? training.name : ""}</span>
-                <div className="image_container">
-                    <img src={arrow_down} alt="Icono desplegable"/>
-                </div>
-            </button>
-            <div className={ menuVisibleTraining ? "dropdown_menu_training" : "dropdown_menu_notVisible" }>
-                {
-                    Object.keys(trainings).map((el)=>{   
-                        return(
-                            <button className="button_selection" onClick={()=> handlerClickSelectTraining(trainings[el])}>
-                                <div className="image_container">
-                                    <img src={trainings[el].image} alt="Icono de la disciplina"/>
-                                </div>
-                                <span>{trainings[el].name}</span>
-                            </button>
-                        )
-                    })
-                }
             </div>
-            <h3>Elgir horario:</h3>
-            <button className="button_selection" onClick={handlerClickVisibleHour}>
-                <span>{hour? hour : ""}</span>
-                <div className="image_container">
-                    <img src={arrow_down} alt="Icono desplegable"/>
+            <div>
+                <h3>Elgir horario:</h3>
+                <button className="button_selection" onClick={handlerClickVisibleHour}>
+                    <span>{hour? hour : ""}</span>
+                    <div className="image_container">
+                        <img src={arrow_down} alt="Icono desplegable"/>
+                    </div>
+                </button>
+                <div className={ menuVisibleHour ? "dropdown_menu_hour" : "dropdown_menu_notVisible" }>
+                    { 
+                        Object.keys(training.hours? training.hours : hours).map((el)=>{   
+                            return(
+                                <button className="button_selection" onClick={()=> handlerClickSelectHour(training.hours[el])}>
+                                    <span>{training.hours[el]}</span>
+                                </button>
+                            )
+                        })
+                    }
                 </div>
-            </button>
-            <div className={ menuVisibleHour ? "dropdown_menu_hour" : "dropdown_menu_notVisible" }>
-                { 
-                    Object.keys(training.hours? training.hours : hours).map((el)=>{   
-                        return(
-                            <button className="button_selection" onClick={()=> handlerClickSelectHour(training.hours[el])}>
-                                <span>{training.hours[el]}</span>
-                            </button>
-                        )
-                    })
-                }
             </div>
         </div>
     )
