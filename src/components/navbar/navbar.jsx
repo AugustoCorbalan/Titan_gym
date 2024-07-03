@@ -12,6 +12,7 @@ export const Navbar = ()=>{
     const handlerVisibilityPosterStore = ()=>{
         setVisibilityPosterStore(!visibilityPosterStore);
         setTimeout(()=>{setVisibilityPosterStore(false)}, 3000)
+        setVisibilityDropdownMenu(false);
     }
     const handlerVisibilityPosterLogin = ()=>{
         setVisibilityPosterLogin(!visibilityPosterLogin);
@@ -76,9 +77,9 @@ export const Navbar = ()=>{
                     <button className='button_scroll' onClick={handlerVisibilityPosterStore}>
                         Tienda
                     </button>
-                    <div className={visibilityPosterStore? 'upcoming_poster' : 'upcoming_poster_none'}>
-                        <span>¡Proximamente podrás adquirir todos los productos de <p>TITAN </p> directamente desde acá!</span>
-                    </div>
+                </div>
+                <div className={visibilityPosterStore? 'upcoming_poster' : 'upcoming_poster_none'}>
+                    <span>¡Proximamente podrás adquirir todos los productos de <p>TITAN </p> directamente desde acá!</span>
                 </div>
             </div>
             <div className='container_icons'>
