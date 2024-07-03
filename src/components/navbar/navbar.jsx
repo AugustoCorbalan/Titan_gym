@@ -31,6 +31,7 @@ export const Navbar = ()=>{
         const scrollWindow = window.scrollY;
         console.log(sectionTop);
         window.scrollTo(0, sectionTop + scrollWindow);
+        setVisibilityDropdownMenu(false);
     }
 
     useEffect(()=>{

@@ -116,18 +116,23 @@
                 position: absolute;
                 right: 1rem;
                 top: 4.37rem;
-                padding: 0.5rem 1rem 0.5rem 1rem;
-                padding: 1rem;
+                padding: 1rem 0rem 1rem 0rem;
                 border-radius: 0.5rem 0 0 0.5rem;
                 background-color: $primaryColor;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
-                height: 14rem;
+                height: 15rem;
+                width: 50%;
                 button{
                     height: 2.5rem;
                     color: black;
-                    font-size: 1.5rem;
+                    font-size: 1.6rem;
+                    width: 100%;
+                }
+                button:focus{
+                    background-color: $primaryColorHover;
+                    scale: 0.98;
                 }
             }
             .dropdown_menu_none{
