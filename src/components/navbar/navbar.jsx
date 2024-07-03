@@ -3,11 +3,14 @@ import user_circle from '../../assets/icons/user_circle.svg';
 import dots_vertical from '../../assets/icons/dots_vertical.svg'; 
 
 export const Navbar = ()=>{
+    const setScrollTop0 = ()=>{
+        window.scrollTo(0,0);
+    }
     return(
         <div className='navbar_container'>
-            <div className='container_logo'>
+            <a className='container_logo' onClick={setScrollTop0}>
                 <img src={primaryLogo} alt="Logotipo de marca"/>
-            </div>
+            </a>
             <div className='container_a'>
                 <a href='#about_section'>¿Quienes Somos?</a>
                 <a href='#trainings_section'>Entrenamientos</a>
