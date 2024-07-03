@@ -44,9 +44,45 @@
         display: flex;
         justify-content: flex-end;
         width: 25%;
+        button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
         img{
             height: 1.87em;
         }
+    }
+    .upcoming_poster{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 15rem;
+        // height: 10rem;
+        padding: 1.5rem;
+        left: 62%;
+        top: 4rem;
+        background-color: $primaryColor;
+        border-radius: 0.5rem;
+        font-family: 'Open Sans Hebrew';
+        font-style: italic;
+        font-size: 1.1rem;
+        font-weight: 500;
+        p{
+            display: inline;
+            font-family:'Watone';
+            font-size: 1.4em;
+            font-style: italic;
+            font-weight: 500;
+        }
+    }
+    .upcoming_poster_login{
+        left: auto;
+        right: 2.5rem;
+    }
+    .upcoming_poster_none{
+        display: none;
     }
 }
 
