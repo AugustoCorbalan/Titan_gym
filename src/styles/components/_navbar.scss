@@ -18,7 +18,7 @@
             height: 2.56rem;
         }
     }
-    .container_a_mobile{
+    .container_buttons_mobile{
         display: none;
     }
     .container_buttons{
@@ -98,10 +98,10 @@
             align-self: flex-start;
             width: auto;
         }
-        .container_a{
+        .container_buttons{
             display: none;
         }
-        .container_a_mobile{
+        .container_buttons_mobile{
             display: block;
             align-self: flex-end;
             button{
@@ -110,6 +110,28 @@
             }
             img{
                 height: 2.4rem;
+            }
+            .dropdown_menu{
+                // border: 1px solid red;
+                position: absolute;
+                right: 1rem;
+                top: 4.37rem;
+                padding: 0.5rem 1rem 0.5rem 1rem;
+                padding: 1rem;
+                border-radius: 0.5rem 0 0 0.5rem;
+                background-color: $primaryColor;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 14rem;
+                button{
+                    height: 2.5rem;
+                    color: black;
+                    font-size: 1.5rem;
+                }
+            }
+            .dropdown_menu_none{
+                display: none;
             }
         }
         .container_icons{
