@@ -11,25 +11,34 @@
     background-color: $blackColor;
     padding: 0 2.56em 0 2.56em;
     .container_logo{
+        display: flex;
+        justify-content: flex-start;
         width: 25%;
         img{
-            height: 2.56em;
+            height: 2.56rem;
         }
     }
     .container_a_mobile{
         display: none;
     }
-    .container_a{
+    .container_buttons{
         display: flex;
         justify-content: space-around;
         width: 50%;
+    }
+    .button_scroll{
+        color: $primaryColor;
+        text-decoration: none;
         font-family:'Watone';
         font-style: italic;
         font-size: 1.25em;
-        a{
-            color: $primaryColor;
-            text-decoration: none;
-        }
+        background-color: transparent;
+        border: none;
+    }
+    .button_scroll:hover{
+        color: $primaryColorHover;
+        scale: 0.98;
+        cursor: pointer;
     }
     .container_icons{
         display: flex;
