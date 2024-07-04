@@ -13,7 +13,7 @@ export const Filters = ({setDisciplineSelected}) =>{
         const body = document.querySelector("body");
         const handlerClick = (event)=>{
             const container_filters = document.querySelector(".container_filters");
-            if(!container_filters.contains(event.target)){
+            if((!container_filters.contains(event.target)) && (menuVisibleTraining || menuVisibleHour)){
                 setMenuVisibleTraining(false);
                 setMenuVisibleHour(false);
             }

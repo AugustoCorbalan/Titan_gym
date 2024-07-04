@@ -48,7 +48,7 @@ export const TimeTable = ()=>{
                             CONSULTAR
                         </a> */}
                     </div>
-                    <Table/>
+                    <Table disciplineSelected={disciplineSelected}/>
                     <div className='container_references'>
                         <div className='reference'>
                             <img src={boxeo_icon} alt='Icono de "Boxeo"'  />
