@@ -216,7 +216,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // width: 80rem;
     }
     .days{
         display: flex;
@@ -272,9 +271,7 @@
 
 @media (max-width: 720px){
     .timeTable_container{
-        // border: 1px solid red;
         padding-top: 2.5rem;
-        min-height: auto !important;
         h2{
             font-size: 3.5rem;
         }
@@ -342,16 +339,20 @@
         }
     }
     .table{
-        // border: 1px solid red;
-        transform: scale(0.8);
-        transform-origin: top;
-        width: calc(60rem * 0.8);
-        height: calc(30rem * 0.8);
         span{
-            width: 8rem;
+            width: 6.6rem;
+            font-size: 1.3rem;
+        }
+        .row{
+            span{
+                height: 3.5rem;
+            }
         }
         .separator{
-            width: 48rem;
+            width: 39.6rem;
+        }
+        .foot_description{
+            font-size: 1rem;
         }
     }
     .container_filters{

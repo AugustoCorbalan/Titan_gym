@@ -7,7 +7,6 @@ export const Table = ({disciplineSelected})=>{
     const disciplineSelectedHour= disciplineSelected? disciplineSelected.hour : "Ninguno seleccionado";
     
     const [diccionaryIcons, setDiccionaryIcons] = useState(defaultIcons);
-    console.log(defaultIcons)
     useEffect(()=>{
         setDiccionaryIcons( matchDiscipline(disciplineSelectedName, disciplineSelectedHour));
     },[disciplineSelected])

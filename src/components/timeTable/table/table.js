@@ -70,7 +70,7 @@ export const matchDiscipline = (disciplineSelectedName, disciplineSelectedHour)=
        Lunes_20_30 : match(disciplineSelected, 'Total Body', "20:30hs a 21:30hs")? totalBody_icon_3 : totalBody_icon_3_none,
        Lunes_21_30 : match(disciplineSelected, 'Total Body', "21:30hs a 22:30hs")? totalBody_icon_4 : totalBody_icon_4_none,
        Martes_19_30 : match(disciplineSelected, 'Entrenamiento personalizado', "19:30hs a 20:30hs")? personalizado_icon_5 : personalizado_icon_5_none,
-       Martes_21_30 : match(disciplineSelected, 'Boxeo', "19:30hs a 20:30hs")? boxeo_icon : boxeo_icon_none,
+       Martes_21_30 : match(disciplineSelected, 'Boxeo', "21:30hs a 22:30hs")? boxeo_icon : boxeo_icon_none,
        Miercoles_8_30 : match(disciplineSelected, 'Total Body', "8:30hs a 9:30hs")? totalBody_icon_1 : totalBody_icon_1_none ,
        Miercoles_9_30 : match(disciplineSelected, 'Entrenamiento personalizado', "9:30hs a 10:30hs")? personalizado_icon_1 : personalizado_icon_1_none,
        Miercoles_15_30 : match(disciplineSelected, 'Entrenamiento personalizado', "15:30hs a 16:30hs")? personalizado_icon_2 : personalizado_icon_2_none,
