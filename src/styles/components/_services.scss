@@ -150,6 +150,12 @@
             }
         }
     }
+    .container_card_animation_X{
+        animation: rotateAnimation_X linear 0.8s;
+    }
+    .container_card_animation_Y{
+        animation: rotateAnimation_Y linear 0.8s;
+    }
     .container_card_vertical:hover .container_card_inner{
         transform: rotateY(180deg);
     }
@@ -307,6 +313,12 @@
                 scale: 1.2;
             }
         }
+        .container_card_animation_Y{
+            animation: rotateAnimation_Y linear 0.8s;
+        }
+        .container_card_animation_X{
+            animation: rotateAnimation_Y linear 0.8s;
+        }
     }
 }
 @media (max-width: 330px) {
@@ -329,5 +341,28 @@
         // .container_card_horizontal:hover .container_card_inner{
         //     scale: 1.5 !important;
         // }
+    }
+}
+
+@keyframes rotateAnimation_X {
+    0%{
+        transform: rotateX(0deg);
+    }
+    60%{
+        transform: rotateX(150deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+}
+@keyframes rotateAnimation_Y {
+    0%{
+        transform: rotateY(0deg);
+    }
+    60%{
+        transform: rotateY(150deg);
+    }
+    100%{
+        transform: rotateY(0deg);
     }
 }

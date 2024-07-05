@@ -30,7 +30,6 @@ export const Navbar = ()=>{
         const sectionElement = document.getElementById(section);
         const sectionTop = sectionElement.getBoundingClientRect().top;
         const scrollWindow = window.scrollY;
-        console.log(sectionTop);
         window.scrollTo(0, sectionTop + scrollWindow);
         setVisibilityDropdownMenu(false);
     }

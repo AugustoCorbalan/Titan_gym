@@ -1,6 +1,6 @@
-export const TotalBody = ()=>{
+export const TotalBody = ({animation})=>{
     return(
-        <div id="total_body_card" className="container_card_inner">
+        <div id="total_body_card" className={animation? "container_card_inner container_card_animation_Y" : "container_card_inner"}>
             <div className="front-end">
                 <span>TOTAL BODY</span>
             </div>

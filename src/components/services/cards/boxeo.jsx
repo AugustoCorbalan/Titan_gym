@@ -1,7 +1,7 @@
-export const Boxeo = ()=>{
+export const Boxeo = ({animation})=>{
     return(
         <>
-            <div id="boxeo_card" className="container_card_inner">
+            <div id="boxeo_card" className={animation? "container_card_inner container_card_animation_X" : "container_card_inner" }>
                 <div className="front-end">
                     <span>BOXEO</span>
                 </div>
