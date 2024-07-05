@@ -5,7 +5,10 @@ import whatsapp_icon from '../../assets/icons/whatsapp_black.svg';
 export const Footer = ()=>{
     return(
         <div className="footer_container">
-            <div className="callToAction"></div>
+            <div className="callToAction">
+                <span>¡LO MAS DIFICIL ES EMPEZAR!</span>
+                <a href='https://wa.me/543547579422' target='_blanck'>Empezar</a>
+            </div>
             <footer>
                 <div className="container_1">
                     <a href='https://wa.me/543547579422' target='_blanck'>

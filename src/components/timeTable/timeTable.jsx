@@ -46,9 +46,9 @@ export const TimeTable = ()=>{
                         <Filters setDisciplineSelected={setDisciplineSelected}/>
                     </div>
                     <Table disciplineSelected={disciplineSelected}/>
-                    <a className= "callToAction" href='https://wa.me/543547579422' target='_blanck'>
+                    {/* <a className= "callToAction" href='https://wa.me/543547579422' target='_blanck'>
                         CONSULTAR
-                    </a>
+                    </a> */}
                     <div className='container_references'>
                         <div className='reference'>
                             <img src={boxeo_icon} alt='Icono de "Boxeo"'  />
