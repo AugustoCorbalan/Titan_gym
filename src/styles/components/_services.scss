@@ -49,6 +49,15 @@
             }
             .front-end{
                 border-radius: 5px;
+                .img_touch{
+                    display: none;
+                }
+                .img_pointer{
+                    position: absolute;
+                    bottom: 0.5rem;
+                    right: 1rem;
+                    max-width: 5rem;
+                }
             }
             .back-end{
                 top: -23.75rem;
@@ -222,6 +231,20 @@
                 width: 100%;
                 height: 100%;
                 padding: 4rem 0rem 4rem 0rem;
+                .container_card_inner{
+                    .front-end{
+                        .img_pointer{
+                            display: none;
+                        }
+                        .img_touch{
+                            display: inline;
+                            position: absolute;
+                            bottom: 1.3rem;
+                            right: 1rem;
+                            max-width: 5rem;
+                        }
+                    }
+                }
                 .column1{
                     display: flex;
                     flex-direction: column;

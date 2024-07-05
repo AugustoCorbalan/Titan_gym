@@ -1,9 +1,13 @@
+import touchIcon from '../../../assets/icons/touchScreen.svg';
+import pointerHover from '../../../assets/icons/pointerHover.svg';
 export const Boxeo = ({animation})=>{
     return(
         <>
             <div id="boxeo_card" className={animation? "container_card_inner container_card_animation_X" : "container_card_inner" }>
                 <div className="front-end">
                     <span>BOXEO</span>
+                    <img className= 'img_touch' src={touchIcon} alt='icon touch'/>
+                    <img className= 'img_pointer' src={pointerHover} alt='icon pointer'/>
                 </div>
                 <div className="back-end">
                 <div className="container_info">
