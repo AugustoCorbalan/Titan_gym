@@ -7,29 +7,20 @@ export const Services = ()=>{
     const [animation, setAnimation] = useState(false);
 
     useEffect(()=>{
-        const handlerScroll = (event)=>{
-            const sectionElement = document.getElementById('trainings_section');
-            // //Guardo las propiedades de inicio y fin de la seccion
-            const sectionTop = sectionElement.getBoundingClientRect().top;
-            const sectionBottom = sectionElement.getBoundingClientRect().bottom;
-            if(sectionTop < 0 && sectionBottom > 0 && !animation){
-                //Modifico la clase animation
+        const cards = document.querySelector('.services_container');
+        const verifyVisibility = (entries)=>{
+            const entry = entries[0];
+            if(entry.isIntersecting){
                 setAnimation(true);
+            }else if (animation){
+                setAnimation(false)
             }
-            else if(sectionTop > 0 && animation){
-                //Seteo animation en False
-                setAnimation(false);
-            }
-            else if(sectionBottom < 0 && animation){
-                //Seteo animation en False
-                setAnimation(false);
-            }
-
         }
-        document.addEventListener("scroll", handlerScroll);
-        return ()=>{
-            document.removeEventListener("scroll", handlerScroll)
-        }
+        const observer = new IntersectionObserver(verifyVisibility, {threshold: 0.5});
+        observer.observe(cards);
+        return( ()=>{
+            observer.unobserve(cards)
+        })
     })
 
     return(
