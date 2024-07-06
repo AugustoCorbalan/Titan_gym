@@ -22,7 +22,7 @@ export const Boxeo = ({animation})=>{
                             </ul>
                         </div>
                         <div className="container_button">
-                            <button>MAS INFO</button>
+                            <a href='https://wa.me/543547579422' target='_blanck'>Consultar</a>
                         </div>
                     </div>
                 </div>

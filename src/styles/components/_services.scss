@@ -98,15 +98,23 @@
                     }
                     .container_button{
                         height: 15%;
-                        button{
+                        a{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             background-color: $primaryColor;
-                            border: none;
+                            color: black;
                             width: 9rem;
                             height: 2rem;
                             font-family: 'Watone';
                             font-weight: 100;
                             font-size: 1.2rem;
                             border-radius: 0.2rem;
+                            text-decoration: none;
+                        }
+                        a:hover{
+                            background-color: $primaryColorHover;
+                            scale: 0.98;
                         }
                     }
                 }
@@ -214,7 +222,7 @@
                 }
                 .container_button{
                     height: 15%;
-                    button{
+                    a{
                         background-color: $primaryColor;
                         border: none;
                         width: 9rem;
@@ -222,6 +230,7 @@
                         font-family: 'Watone';
                         font-weight: 100;
                         font-size: 1.2rem;
+                        text-decoration: none;
                     }
                 }
             }
