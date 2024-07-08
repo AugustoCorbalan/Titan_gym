@@ -86,7 +86,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url('../../assets/images/background.png');
+    background-image: url('../../assets/images/background.webp');
     background-repeat: no-repeat;
     background-position: center center ;
     background-size: 85vw;
@@ -97,7 +97,7 @@
     .landing_container::before{
         min-height: initial;
         max-height: initial;
-        background-image: url('../../assets/images/background_mobile.png');
+        background-image: url('../../assets/images/background_mobile.webp');
         opacity: 100%;
         background-size: auto 68%;
         background-position: left center;
