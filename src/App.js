@@ -4,18 +4,31 @@ import {About} from './components/about/about.jsx';
 import {Services} from './components/services/services.jsx';
 import {TimeTable} from './components/timeTable/timeTable.jsx';
 import {Footer} from './components/footer/footer.jsx';
+import {Loader} from './components/loader/loader.jsx';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [loaderStatus, setLoaderStatus] = useState(false);
+  const [timePageLoader, setTimePageLoader] = useState(false)
+  useEffect(()=>{
+    document.addEventListener('load', ()=>setLoaderStatus(true))
+    setTimeout(()=>setTimePageLoader(true), 1250);
+  },[])
   return (
     <div className='app_container'>
-      <header className="App-header">  
-        <Navbar/>
-      </header>
-      <Landing/>
-      <About/>
-      <Services/>
-      <TimeTable/>
-      <Footer/>
+      {(loaderStatus && timePageLoader)?
+        <>
+          <header className="App-header">  
+            <Navbar/>
+          </header>
+          <Landing/>
+          <About/>
+          <Services/>
+          <TimeTable/>
+          <Footer/>
+        </> :
+        <Loader/>
+      }
     </div>
   );
 }
