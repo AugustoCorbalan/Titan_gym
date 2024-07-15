@@ -12,7 +12,7 @@ function App() {
   const [timePageLoader, setTimePageLoader] = useState(false)
   useEffect(()=>{
     window.addEventListener('load', ()=>setLoaderStatus(true))
-    setTimeout(()=>setTimePageLoader(true), 1250);
+    setTimeout(()=>setTimePageLoader(true), 1800);
   },[])
   return (
     <div className='app_container'>
