@@ -1,5 +1,5 @@
-import about_1 from '../../assets/images/about_1.webp';
-import about_2 from '../../assets/images/about_2.webp';
+import about_1 from '../../../../assets/images/about_1.webp';
+import about_2 from '../../../../assets/images/about_2.webp';
 
 export const About = ()=>{
     return(

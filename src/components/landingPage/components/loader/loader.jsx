@@ -1,4 +1,4 @@
-import logo_titan_white from '../../assets/logos/logo_titan_white.svg';
+import logo_titan_white from '../../../../assets/logos/logo_titan_white.svg';
 export const Loader = ()=>{
     
     return(

@@ -1,7 +1,7 @@
-import mancuerna_vector from '../../../assets/icons/time-table/mancuerna_vector.svg';
-import pesaRusa_vector from '../../../assets/icons/time-table/pesaRusa_vector.svg';
-import boxeo_vector from '../../../assets/icons/time-table/boxeo_vector.svg';
-import none_selection from '../../../assets/icons/none.svg';
+import mancuerna_vector from '../../../../../assets/icons/time-table/mancuerna_vector.svg';
+import pesaRusa_vector from '../../../../../assets/icons/time-table/pesaRusa_vector.svg';
+import boxeo_vector from '../../../../../assets/icons/time-table/boxeo_vector.svg';
+import none_selection from '../../../../../assets/icons/none.svg';
 
 export const hours = {
     hour8_30: "8:30hs a 9:30hs",

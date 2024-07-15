@@ -1,5 +1,5 @@
-import whatsapp_icon from '../../assets/icons/whatsapp_yellow.svg';
-import instagram_icon from '../../assets/icons/instagram_yellow.svg';
+import whatsapp_icon from '../../../../assets/icons/whatsapp_yellow.svg';
+import instagram_icon from '../../../../assets/icons/instagram_yellow.svg';
 
 export const Landing = ()=>{
     return(

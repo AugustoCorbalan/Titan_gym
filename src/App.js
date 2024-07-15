@@ -1,35 +1,16 @@
-import {Navbar} from './components/navbar/navbar.jsx';
-import {Landing} from './components/landing/landing.jsx';
-import {About} from './components/about/about.jsx';
-import {Services} from './components/services/services.jsx';
-import {TimeTable} from './components/timeTable/timeTable.jsx';
-import {Footer} from './components/footer/footer.jsx';
-import {Loader} from './components/loader/loader.jsx';
 import { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import { Navbar } from './components/navbar/navbar.jsx';
+import { LandingPage } from './components/landingPage/landingPage.jsx';
+import { Shop } from './components/shop/Shop.jsx';
 
 function App() {
-  const [loaderStatus, setLoaderStatus] = useState(false);
-  const [timePageLoader, setTimePageLoader] = useState(false)
-  useEffect(()=>{
-    window.addEventListener('DOMContentLoaded ', ()=>setLoaderStatus(true))
-    setTimeout(()=>setTimePageLoader(true), 2000);
-  },[])
+ 
   return (
-    <div className='app_container'>
-      {(timePageLoader)?
-        <>
-          <header className="App-header">  
-            <Navbar/>
-          </header>
-          <Landing/>
-          <About/>
-          <Services/>
-          <TimeTable/>
-          <Footer/>
-        </> :
-        <Loader/>
-      }
-    </div>
+    <Routes>
+      <Route path='/' element={ <LandingPage/>}/>
+      {/* <Route path='/tiendaTitan' element={ <Shop/> }/> */}
+    </Routes>
   );
 }
 

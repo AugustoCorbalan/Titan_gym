@@ -1,7 +1,7 @@
-import logo_titan_black from '../../assets/logos/logo_titan_black.svg' ;
-import instagram_icon from '../../assets/icons/instagram_black.svg';
-import map_pin_icon from '../../assets/icons/map_pin.svg';
-import whatsapp_icon from '../../assets/icons/whatsapp_black.svg';
+import logo_titan_black from '../../../../assets/logos/logo_titan_black.svg' ;
+import instagram_icon from '../../../../assets/icons/instagram_black.svg';
+import map_pin_icon from '../../../../assets/icons/map_pin.svg';
+import whatsapp_icon from '../../../../assets/icons/whatsapp_black.svg';
 export const Footer = ()=>{
     return(
         <div className="footer_container">

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import {trainings, hours} from './data.js';
-import arrow_down from '../../../assets/icons/arrow_down.svg';
+import arrow_down from '../../../../../assets/icons/arrow_down.svg';
 
 export const Filters = ({setDisciplineSelected}) =>{
     

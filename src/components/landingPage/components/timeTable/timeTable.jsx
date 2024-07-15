@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import {Table} from './table/table.jsx'; 
 import { Filters } from './Filters/filters.jsx';
-import totalBody_icon from '../../assets/icons/time-table/pesaRusa_vector.svg';
-import personalizado_icon from '../../assets/icons/time-table/mancuerna_vector.svg';
-import boxeo_icon from '../../assets/icons/time-table/boxeo_vector.svg';
+import totalBody_icon from '../../../../assets/icons/time-table/pesaRusa_vector.svg';
+import personalizado_icon from '../../../../assets/icons/time-table/mancuerna_vector.svg';
+import boxeo_icon from '../../../../assets/icons/time-table/boxeo_vector.svg';
 
 export const TimeTable = ()=>{
     const [disciplineSelected, setDisciplineSelected] = useState({name:'Ninguno seleccionado', hour:'Ninguno seleccionado'})

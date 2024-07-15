@@ -1,5 +1,5 @@
-import touchIcon from '../../../assets/icons/touchScreen.svg';
-import pointerHover from '../../../assets/icons/pointerHover.svg';
+import touchIcon from '../../../../../assets/icons/touchScreen.svg';
+import pointerHover from '../../../../../assets/icons/pointerHover.svg';
 export const Boxeo = ({animation})=>{
     return(
         <>
