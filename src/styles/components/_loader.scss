@@ -40,7 +40,6 @@
         background-color: black; 
         span{
             color: white;
-            font-size: 0.8rem;
             font-family: 'Open Sans Hebrew';
             font-style: italic;
             font-weight: 400;
@@ -55,4 +54,37 @@
     100% {
       transform: rotate(360deg);
     }
+  }
+  @media (max-width: 720px) {
+    .loader_container{
+      min-height: auto;
+      height: 100%;
+      img{
+        position: absolute;
+        max-width: 10rem;
+        max-height: 12rem;
+        padding-top: 3rem;
+    }
+    .spinner{
+        width: 15rem;
+        height: 15rem;
+    }
+      .spinner:after {
+        box-sizing: border-box;
+        content: " ";
+        display: block;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        border: 0.5rem solid currentColor;
+        border-color: currentColor transparent currentColor transparent;
+        animation: lds-dual-ring 1.1s linear infinite;
+      }
+      .footer{
+        span{
+            font-size: 0.9rem;
+        }
+    }
+    }
+    
   }

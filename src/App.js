@@ -11,12 +11,12 @@ function App() {
   const [loaderStatus, setLoaderStatus] = useState(false);
   const [timePageLoader, setTimePageLoader] = useState(false)
   useEffect(()=>{
-    window.addEventListener('load', ()=>setLoaderStatus(true))
-    setTimeout(()=>setTimePageLoader(true), 1800);
+    window.addEventListener('DOMContentLoaded ', ()=>setLoaderStatus(true))
+    setTimeout(()=>setTimePageLoader(true), 2000);
   },[])
   return (
     <div className='app_container'>
-      {(loaderStatus && timePageLoader)?
+      {(timePageLoader)?
         <>
           <header className="App-header">  
             <Navbar/>
