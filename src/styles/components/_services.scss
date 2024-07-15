@@ -63,7 +63,7 @@
                 top: -23.75rem;
                 transform: rotateY(180deg);
                 border-radius: 5px;
-                background-image: url('../../assets/images/background_card.jpg');
+                background-image: url('../../assets/images/background_card.webp');
                 background-size: contain;
                 height: 100%;
                 .container_info{
@@ -140,7 +140,7 @@
         }
         #personalizado_card{
             .front-end{
-                background-image: url('../../assets/images/service1.png');
+                background-image: url('../../assets/images/service1.webp');
                 background-size: cover;
                 background-position: center;
                 width: 100%;
@@ -152,14 +152,14 @@
         }
         #total_body_card{
             .front-end{
-                background-image: url('../../assets/images/service2.png');
+                background-image: url('../../assets/images/service2.webp');
                 background-size: contain;
                 background-position: center;
             }
         }
         #boxeo_card{
             .front-end{
-                background-image: url('../../assets/images/service3.png');
+                background-image: url('../../assets/images/service3.webp');
                 background-size: cover;
                 background-position: center;
                 width: 23.25rem;
