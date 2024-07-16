@@ -43,7 +43,7 @@ export const Card = ({product})=>{
                         <button className="callToAction">Comprar</button>
                     </div>
                 </div>
-                <span className="information_message">Tiene una demora de 15 días. Al comprar se abona unicamente el 50% del precio publicado para la seña.</span>
+                <span className="information_message">Tiene una demora de 15 días. Al comprar se abona únicamente el 50% del precio publicado para la seña.</span>
             </div>
         </div>
     )
