@@ -1,0 +1,135 @@
+.shop_container{
+    background-image: url('../../assets/images/background_shop.webp');
+    width: 100%;
+    min-height: calc(100vh - 5rem);
+    color: white;
+    margin-top: 5rem;
+    font-family: 'Open Sans Hebrew';
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight:400;
+    .callToAction{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primaryColor;
+        border: none;
+        width: 11rem;
+        height: 3rem;
+        border-radius: 5px;
+        font-family: 'Watone';
+        font-style: italic;
+        font-size: 1.7rem;
+        color: black;
+        margin-top: 1rem;
+        text-decoration: none;
+    }
+    .callToAction:hover{
+        scale: 0.97;
+        cursor: pointer;
+        background-color: $primaryColorHover;
+    }
+    .container_cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: calc(100vh - 5rem);
+        // border: 1px solid red;
+        .container_card{
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 70rem;
+            height: calc(70rem /(1.618 * 2));
+            border-radius: 1rem;
+            box-shadow: 0 0 1rem 0.05rem rgba(255, 255, 255, 0.05);
+            padding: 1.5rem 2rem 1.5rem 0.5rem;
+            .container_image{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                height: 100%;
+                img{
+                    max-width: 90%;
+                    max-height: 80%;
+                    filter: drop-shadow(
+                        0 0 0.4rem rgba(255, 255, 255, 0.2)
+                    );
+                }
+            }
+            .container_data{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 70%;
+                height: 100%;
+                // border: 1px solid red;
+                h2{
+                    font-family: 'Watone';
+                    font-style: italic;
+                    font-size: 1.8rem;
+                    font-weight: 100;
+                    margin: 0;
+                }
+                .information_message{
+                    font-size: 1rem;
+                    font-weight: 200;
+                }
+                .container_description{
+                    display: flex;
+                    width: 100%;
+                    // border: 1px solid green;
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+                        // border: 1px solid red;
+                        h3{
+                            font-family: 'Watone';
+                            font-style: italic;
+                            font-size: 1.5rem;
+                            font-weight: 100;
+                            margin: 0;
+                            margin-bottom: 1rem;
+                        }
+                        span{
+                            margin-top: 0.5rem;
+                        }
+                    }
+                    .column2{
+                        align-items: center;
+                        justify-content: space-between;
+                        // border: 1px solid red;
+                        .container_size_buttons{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            width: 100%;
+                            // border: 1px solid green;
+                            button{
+                                // width: 2.5rem;
+                                height: 2.5rem;
+                                margin: 0 0.25rem 0 0.25rem;
+                                background-color: transparent;
+                                border: none;
+                                color: white;
+                                font-size: 1.2rem;
+                                font-weight: 700;
+                            }
+                            button:hover{
+                                color: $primaryColor;
+                                cursor: pointer;
+                            }
+                            .button_selected{
+                                color: $primaryColor;
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
