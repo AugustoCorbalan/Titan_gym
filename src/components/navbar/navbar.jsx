@@ -5,15 +5,9 @@ import { useState, useEffect } from 'react';
 
 export const Navbar = ()=>{
 
-    const [visibilityPosterStore, setVisibilityPosterStore] = useState(false);
     const [visibilityPosterLogin, setVisibilityPosterLogin] = useState(false);
     const [visibilityDropdownMenu, setVisibilityDropdownMenu] = useState(false);
 
-    const handlerVisibilityPosterStore = ()=>{
-        setVisibilityPosterStore(!visibilityPosterStore);
-        setTimeout(()=>{setVisibilityPosterStore(false)}, 3000)
-        setVisibilityDropdownMenu(false);
-    }
     const handlerVisibilityPosterLogin = ()=>{
         setVisibilityPosterLogin(!visibilityPosterLogin);
         setTimeout(()=>{setVisibilityPosterLogin(false)}, 3500)
@@ -52,34 +46,28 @@ export const Navbar = ()=>{
     return(
         <header className="App-header">  
             <div className='navbar_container'>
-                <button className='button_scroll container_logo' onClick={setScrollTop0}>
+                <a href='/' className='button_scroll container_logo' onClick={setScrollTop0}>
                     <img src={primaryLogo} alt="Logotipo de marca"/>
-                </button>
+                </a>
                 <div className='container_buttons'>
                     <button className='button_scroll' onClick={()=>scroll('about_section')}>¿Quienes Somos?</button>
                     <button className='button_scroll' onClick={()=>scroll('trainings_section')}>Entrenamientos</button>
                     <button className='button_scroll' onClick={()=>scroll('hours_section')}>Horarios</button>
-                    <button className='button_scroll' onClick={handlerVisibilityPosterStore}>
+                    <a href='/tiendaTitan' className='button_scroll'>
                         Tienda
-                    </button>
-                    <div className={visibilityPosterStore? 'upcoming_poster' : 'upcoming_poster_none'}>
-                        <span>¡Proximamente podrás adquirir todos los productos de <p>TITAN </p> directamente desde acá!</span>
-                    </div>
+                    </a>
                 </div>
                 <div className='container_buttons_mobile'>
-                    <button onClick={handlerVisibilityMenu}>
+                    <a href='/' onClick={handlerVisibilityMenu}>
                         <img src={dots_vertical} alt="icono del botton de opciones"/>
-                    </button>
+                    </a>
                     <div className={visibilityDropdownMenu? 'dropdown_menu' : 'dropdown_menu_none'}>
                         <button className='button_scroll' onClick={()=>scroll('about_section')}>¿Quienes Somos?</button>
                         <button className='button_scroll' onClick={()=>scroll('trainings_section')}>Entrenamientos</button>
                         <button className='button_scroll' onClick={()=>scroll('hours_section')}>Horarios</button>
-                        <button className='button_scroll' onClick={handlerVisibilityPosterStore}>
+                        <a href='/tiendaTitan' className='button_scroll'>
                             Tienda
-                        </button>
-                    </div>
-                    <div className={visibilityPosterStore? 'upcoming_poster' : 'upcoming_poster_none'}>
-                        <span>¡Proximamente podrás adquirir todos los productos de <p>TITAN </p> directamente desde acá!</span>
+                        </a>
                     </div>
                 </div>
                 <div className='container_icons'>
