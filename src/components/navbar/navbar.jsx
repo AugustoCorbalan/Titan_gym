@@ -58,9 +58,9 @@ export const Navbar = ()=>{
                     </a>
                 </div>
                 <div className='container_buttons_mobile'>
-                    <a href='/' onClick={handlerVisibilityMenu}>
+                    <button href='/' onClick={handlerVisibilityMenu}>
                         <img src={dots_vertical} alt="icono del botton de opciones"/>
-                    </a>
+                    </button>
                     <div className={visibilityDropdownMenu? 'dropdown_menu' : 'dropdown_menu_none'}>
                         <button className='button_scroll' onClick={()=>scroll('about_section')}>¿Quienes Somos?</button>
                         <button className='button_scroll' onClick={()=>scroll('trainings_section')}>Entrenamientos</button>

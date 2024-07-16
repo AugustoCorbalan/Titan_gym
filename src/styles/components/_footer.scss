@@ -70,6 +70,7 @@
     .footer_container{
         height: auto;
         font-size: 0.7rem;
+        // border: 1px solid red;
         footer{
             display: flex;
             flex-direction: column;
@@ -128,6 +129,7 @@
             color: white;
             font-size: 0.8rem;
             font-weight: 100;
+            // border: 1px solid red;
         }
     }
 }
