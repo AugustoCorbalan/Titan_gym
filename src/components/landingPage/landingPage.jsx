@@ -4,7 +4,7 @@ import { Landing } from "./components/landing/landing";
 import { About } from "./components/about/about";
 import { Services } from "./components/services/services";
 import { TimeTable } from "./components/timeTable/timeTable";
-import { Footer } from "./components/footer/footer";
+import { FooterLanding } from "./components/footerLanding/footerLanding";
 import { Loader } from "./components/loader/loader";
 
 export const LandingPage = ()=>{
@@ -23,7 +23,7 @@ export const LandingPage = ()=>{
                 <About/>
                 <Services/>
                 <TimeTable/>
-                <Footer/>
+                <FooterLanding/>
             </> :
             <Loader/>
             }

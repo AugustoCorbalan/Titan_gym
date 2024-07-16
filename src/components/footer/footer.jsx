@@ -1,15 +1,12 @@
-import logo_titan_black from '../../../../assets/logos/logo_titan_black.svg' ;
-import instagram_icon from '../../../../assets/icons/instagram_black.svg';
-import map_pin_icon from '../../../../assets/icons/map_pin.svg';
-import whatsapp_icon from '../../../../assets/icons/whatsapp_black.svg';
+import logo_titan_black from '../../assets/logos/logo_titan_black.svg' ;
+import instagram_icon from '../../assets/icons/instagram_black.svg';
+import map_pin_icon from '../../assets/icons/map_pin.svg';
+import whatsapp_icon from '../../assets/icons/whatsapp_black.svg';
+
 export const Footer = ()=>{
     return(
-        <div className="footer_container">
-            <div className="callToAction">
-                <span>¡LO MAS DIFICIL ES EMPEZAR!</span>
-                <a href='https://wa.me/543547579422' target='_blanck'>Empezar</a>
-            </div>
-            <footer>
+        <div className='footer_container'>
+             <footer>
                 <div className="container_1">
                     <a href='https://wa.me/543547579422' target='_blanck'>
                         <img src={whatsapp_icon} alt="icon Whatsapp" />

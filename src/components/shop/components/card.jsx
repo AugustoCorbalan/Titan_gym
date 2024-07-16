@@ -20,21 +20,27 @@ export const Card = ({product})=>{
                         <span>EDAD: {age}</span>
                     </div>
                     <div className='column2'>
-                        <h3>Seleccionar talle</h3>
-                        <div className='container_size_buttons'>
-                            {sizes.map((size)=>{
-                                return(
-                                    <button 
-                                        id={size} 
-                                        className={(sizeSelected == size)? 'button_selected' : ''}
-                                        onClick={()=>setSizeSelected(size)}
-                                    >
-                                        {size}
-                                    </button>
-                                )
-                            })}
-                        </div>
-                        <button className="callToAction">Comprar</button>   
+                            {
+                                sizes == 'Unico' ?
+                                <></> :
+                                <div>
+                                    <h3>Seleccionar talle</h3>
+                                    <div className='container_size_buttons'>
+                                        {sizes.map((size)=>{
+                                            return(
+                                                <button 
+                                                    id={size} 
+                                                    className={(sizeSelected == size)? 'button_selected' : ''}
+                                                    onClick={()=>setSizeSelected(size)}
+                                                >
+                                                    {size}
+                                                </button>
+                                            )
+                                        })}
+                                    </div>
+                                </div>
+                            }
+                        <button className="callToAction">Comprar</button>
                     </div>
                 </div>
                 <span className="information_message">Tiene una demora de 15 días. Al comprar se abona unicamente el 50% del precio publicado para la seña.</span>
