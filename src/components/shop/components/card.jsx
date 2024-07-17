@@ -6,11 +6,12 @@ export const Card = ({product})=>{
     const [sizeSelected, setSizeSelected] = useState('');
     return(
         <div className="container_card">
+            <h2 className="title_mobile">{name}</h2>
             <div className="container_image">
                 <img src={image} alt="Imagen del producto" />
             </div>
             <div className="container_data">
-                <h2>{name}</h2>
+                <h2 className="title_desktop">{name}</h2>
                 <div className='container_description'>
                     <div className='column1'>
                         <h3>Caracteristicas:</h3>
