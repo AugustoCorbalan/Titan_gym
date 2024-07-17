@@ -144,3 +144,33 @@
     position: fixed;
 
 }
+
+@media (max-width: 720px){
+    .shop_container{
+        .container_cards{
+            .container_card{
+                width: 25rem;
+                height: calc(25rem * 1.618);
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem;
+                border: 1px solid blue;
+                .container_image{
+                    border: 1px solid yellow;
+                    width: 100%;
+                    height: 40%;
+                }
+                .container_data{
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    border: 1px solid red;
+                    h2{
+                        border: 1px solid green;
+                    }
+
+                }
+            }
+        }
+    }
+}
