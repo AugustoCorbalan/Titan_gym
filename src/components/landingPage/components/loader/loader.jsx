@@ -1,8 +1,8 @@
 import logo_titan_white from '../../../../assets/logos/logo_titan_white.svg';
-export const Loader = ()=>{
-    
+export const Loader = ({status})=>{
+    console.log(status)
     return(
-        <div className='loader_container' >
+        <div className={status? 'loader_container' : 'loader_off'} >
             <div className='spinner'>
 
             </div>

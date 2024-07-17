@@ -1,10 +1,11 @@
 import primaryLogo from '../../assets/logos/primaryLogo.svg';
 import user_circle from '../../assets/icons/user_circle.svg';
 import dots_vertical from '../../assets/icons/dots_vertical.svg'; 
+import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 export const Navbar = ()=>{
-
+    const navigate = useNavigate();
     const [visibilityPosterLogin, setVisibilityPosterLogin] = useState(false);
     const [visibilityDropdownMenu, setVisibilityDropdownMenu] = useState(false);
 
@@ -22,9 +23,13 @@ export const Navbar = ()=>{
     }
     const scroll = (section)=>{
         const sectionElement = document.getElementById(section);
-        const sectionTop = sectionElement.getBoundingClientRect().top;
-        const scrollWindow = window.scrollY;
-        window.scrollTo(0, sectionTop + scrollWindow);
+        if(sectionElement){
+            const sectionTop = sectionElement.getBoundingClientRect().top;
+            const scrollWindow = window.scrollY;
+            window.scrollTo(0, sectionTop + scrollWindow);
+        }else{
+            navigate(`/#${section}`)
+        }
         setVisibilityDropdownMenu(false);
     }
 
@@ -46,28 +51,28 @@ export const Navbar = ()=>{
     return(
         <header className="App-header">  
             <div className='navbar_container'>
-                <a href='/' className='button_scroll container_logo' onClick={setScrollTop0}>
+                <Link to='/' className='button_scroll container_logo' onClick={setScrollTop0}>
                     <img src={primaryLogo} alt="Logotipo de marca"/>
-                </a>
+                </Link>
                 <div className='container_buttons'>
                     <button className='button_scroll' onClick={()=>scroll('about_section')}>¿Quienes Somos?</button>
                     <button className='button_scroll' onClick={()=>scroll('trainings_section')}>Entrenamientos</button>
                     <button className='button_scroll' onClick={()=>scroll('hours_section')}>Horarios</button>
-                    <a href='/tiendaTitan' className='button_scroll'>
+                    <Link to='/tiendaTitan' className='button_scroll'>
                         Tienda
-                    </a>
+                    </Link>
                 </div>
                 <div className='container_buttons_mobile'>
-                    <button href='/' onClick={handlerVisibilityMenu}>
+                    <Link to='/' onClick={handlerVisibilityMenu}>
                         <img src={dots_vertical} alt="icono del botton de opciones"/>
-                    </button>
+                    </Link>
                     <div className={visibilityDropdownMenu? 'dropdown_menu' : 'dropdown_menu_none'}>
                         <button className='button_scroll' onClick={()=>scroll('about_section')}>¿Quienes Somos?</button>
                         <button className='button_scroll' onClick={()=>scroll('trainings_section')}>Entrenamientos</button>
                         <button className='button_scroll' onClick={()=>scroll('hours_section')}>Horarios</button>
-                        <a href='/tiendaTitan' className='button_scroll'>
+                        <Link to='/tiendaTitan' className='button_scroll'>
                             Tienda
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className='container_icons'>

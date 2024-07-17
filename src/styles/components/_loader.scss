@@ -1,12 +1,16 @@
 .loader_container{
     position: absolute;
     display: flex;
+    position: fixed;
     justify-content: center;
     align-items: center;
     background-color: black;
     min-width: 100%;
     min-height: 100vh;
+    top: 0;
+    left: 0;
     overflow: hidden;
+    z-index: 100;
     img{
         position: absolute;
         max-width: 13rem;
@@ -46,7 +50,10 @@
             font-size: 1.2rem;
         }
     }
-}
+  }
+  .loader_off{
+    display: none !important;
+  }
 @keyframes lds-dual-ring {
     0% {
       transform: rotate(0deg);
