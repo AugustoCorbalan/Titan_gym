@@ -103,7 +103,22 @@
         }
         .container_buttons_mobile{
             display: block;
+            display: flex;
+            align-items: center;
+            width: 30%;
+            justify-content: space-between;
             align-self: flex-end;
+            #button_shop_mobile{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                max-width: 2.3rem;
+                max-height: 2.3rem;
+                img{
+                    max-width: 2.2rem;
+                    max-height: 2.2rem;
+                }
+            }
             button{
                 background-color: transparent;
                 border: none;
@@ -143,9 +158,13 @@
             }
         }
         .container_icons{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
             position: absolute;
             align-self: center;
-            width: auto;
+            // width: 9rem;
+            // border: 1px solid cyan;
             img{
                 height: 2.5rem;
             }

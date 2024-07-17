@@ -1,5 +1,6 @@
 import primaryLogo from '../../assets/logos/primaryLogo.svg';
 import user_circle from '../../assets/icons/user_circle.svg';
+import shop_icon from '../../assets/icons/store.svg';
 import dots_vertical from '../../assets/icons/dots_vertical.svg'; 
 import { Link, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -63,6 +64,9 @@ export const Navbar = ()=>{
                     </Link>
                 </div>
                 <div className='container_buttons_mobile'>
+                    <Link id='button_shop_mobile' to='/tiendaTitan' className='button_scroll'>
+                        <img src={shop_icon} alt="Icono de tienda"/>
+                    </Link>
                     <Link to='/' onClick={handlerVisibilityMenu}>
                         <img src={dots_vertical} alt="icono del botton de opciones"/>
                     </Link>
@@ -70,9 +74,6 @@ export const Navbar = ()=>{
                         <button className='button_scroll' onClick={()=>scroll('about_section')}>¿Quienes Somos?</button>
                         <button className='button_scroll' onClick={()=>scroll('trainings_section')}>Entrenamientos</button>
                         <button className='button_scroll' onClick={()=>scroll('hours_section')}>Horarios</button>
-                        <Link to='/tiendaTitan' className='button_scroll'>
-                            Tienda
-                        </Link>
                     </div>
                 </div>
                 <div className='container_icons'>
