@@ -1,6 +1,6 @@
 const remera1 = {
     name: 'Remera Titan _diseño1_',
-    image: require('../../../assets/images/products/remera1/Rangla F 3.png'),
+    image: require('../../../assets/images/products/remera1/Rangla F 3.webp'),
     characteristics: {
         price: '$10.000',
         fabric: 'Tela deportiva',
