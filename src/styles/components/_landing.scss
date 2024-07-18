@@ -97,6 +97,7 @@
 @media (max-width: 720px){
     .landing_container::before{
         min-height: initial;
+        height: auto;
         max-height: initial;
         background-image: url('../../assets/images/background_mobile.webp');
         opacity: 100%;
