@@ -16,7 +16,7 @@ export const Footer = ()=>{
                         <img src={instagram_icon} alt="icon Instagram" />
                         <span>titan_espacio_fitness</span>
                     </a>
-                    <a>
+                    <a href='https://maps.app.goo.gl/giKWKNEdo3q3stjVA' target='_blanck'>
                         <img src={map_pin_icon} alt="icon Map" />
                         <span>Prudencio Bustos 257 - AG</span>
                     </a>
