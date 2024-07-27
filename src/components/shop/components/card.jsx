@@ -4,6 +4,12 @@ export const Card = ({product})=>{
     const {name, image, characteristics} = product;
     const {price, fabric, gender, age, sizes} = characteristics;
     const [sizeSelected, setSizeSelected] = useState('');
+
+    const handlerClickCompra = ()=>{
+        const text = `Hola Titan!%0AQuiero realizar la compra de:%0A- Producto: "Remera Titan diseño 1"%0A- Talle: S%0A- Color: "Amarilla/Gris"%0AGracias!!🙌🏽🙌🏽`;
+        window.open(`https://wa.me/543547675861?text=${text}`, "_blank")
+    }
+
     return(
         <div className="container_card">
             <h2 className="title_mobile">{name}</h2>
@@ -41,7 +47,7 @@ export const Card = ({product})=>{
                                     </div>
                                 </div>
                             }
-                        <button className="callToAction">Comprar</button>
+                        <button className="callToAction" onClick={handlerClickCompra}>Comprar</button>
                     </div>
                 </div>
                 <span className="information_message">Tiene una demora de 15 días. Al comprar se abona únicamente el 50% del precio publicado para la seña.</span>
