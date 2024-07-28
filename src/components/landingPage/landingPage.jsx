@@ -8,6 +8,7 @@ import { Services } from "./components/services/services";
 import { TimeTable } from "./components/timeTable/timeTable";
 import { FooterLanding } from "./components/footerLanding/footerLanding";
 import { Loader } from "./components/loader/loader";
+import { Background } from "./components/background/background";
 
 export const LandingPage = ()=>{
     const location = useLocation();
@@ -45,6 +46,7 @@ export const LandingPage = ()=>{
                 <></>
             }
             <>
+                <Background/>
                 <Navbar/>
                 <Landing/>
                 <About/>

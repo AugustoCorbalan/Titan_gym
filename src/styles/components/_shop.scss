@@ -140,11 +140,12 @@
 
 .shop_container::before{
     z-index: -1;
-    background-image: url('../../assets/images/background_shop.webp');
+    background-image: url('../../assets/images/background_general.webp');
     width: 100%;
     min-height: calc(100vh - 5rem);
     content: "";
     position: fixed;
+    background-size: contain;
 
 }
 
@@ -192,5 +193,9 @@
                 }
             }
         }
+    }
+    .shop_container::before{
+        z-index: -1;
+        background-image: url('../../assets/images/background_general_vertical.webp');
     }
 }
