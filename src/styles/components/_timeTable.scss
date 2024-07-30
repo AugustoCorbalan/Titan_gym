@@ -4,9 +4,7 @@
     align-items: center;
     width: 100%;
     padding-top: 4.37rem;
-    // min-height: 100vh;
     overflow: hidden;
-    // border: 1px solid red;
     h2{
         margin: 2.5rem 0 0 0;
         color: $primaryColor;
@@ -359,7 +357,6 @@
         flex-direction: row;
         justify-content: center;
         padding: 0 !important;
-        // border: 1px solid red;
         min-height: auto;
         div{
             display: flex;
@@ -369,6 +366,7 @@
         }
         .dropdown_menu_training{
             left: 0;
+            border-radius: 0.5rem;
             button{
                 div{
                     align-items: flex-start;
@@ -387,7 +385,7 @@
             
         }
         .button_selection{
-            background-color: rgba(128, 128, 128, 0.277);
+            background-color: rgb(72, 72, 72);
             width: 95%;
             border-radius: 0.5rem;
         }
@@ -396,6 +394,7 @@
             right: 0.5rem;
             padding: 1rem;
             top: 6rem;
+            border-radius: 0.5rem;
         }
     }
 }

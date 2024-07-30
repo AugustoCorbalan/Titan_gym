@@ -1,0 +1,17 @@
+.container_background{
+    width: 100%;
+    min-height: 35rem;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    background-image: url('../../assets/images/background_general.webp');
+    background-size: contain;
+    z-index: -100;
+}
+
+@media (max-width: 720px){
+    .container_background{
+        background-image: url('../../assets/images/background_general_vertical.webp');
+        background-size: contain;
+    }
+}

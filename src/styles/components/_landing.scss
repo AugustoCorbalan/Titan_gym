@@ -8,6 +8,8 @@
     max-height: 50rem;
     margin: 0;
     margin-top: 5em;
+    background-color: black;
+    box-shadow: inset 0px -2.5rem 2.5rem 0.5rem rgba(0, 0, 0, 0.9);
     .container_title_callToAction{
         position: absolute;
         display: flex;
@@ -77,13 +79,13 @@
     }
 }
 .landing_container::before{
-    z-index: -1;
+    z-index: 0;
     min-height: 35rem;
     height: calc(100vh - 4.37rem);
     max-height: 50rem;
     content: "";
     position: absolute;
-    top: 5rem;
+    top: 4.2rem;
     bottom: 0;
     left: 0;
     right: 0;
@@ -91,7 +93,6 @@
     background-repeat: no-repeat;
     background-position: center center ;
     background-size: 85vw;
-    opacity: 45%;
 }
 
 @media (max-width: 720px){
@@ -103,6 +104,7 @@
         opacity: 100%;
         background-size: auto 68%;
         background-position: left center;
+        z-index: 0;
     }
     .landing_container{
         min-height: initial;
@@ -111,6 +113,9 @@
         align-items: flex-start;
         padding-right: 2rem;
         width: 100%;
+        background-color: black;
+        margin-top: 4.4rem;
+        box-shadow: 0px 0.5rem 2.5rem 0.5rem rgba(0, 0, 0, 0.9);
         .container_title_callToAction{
             align-items: flex-end;
             justify-content: space-between;
