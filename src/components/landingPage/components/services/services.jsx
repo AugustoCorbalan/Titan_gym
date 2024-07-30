@@ -30,13 +30,13 @@ export const Services = ()=>{
                     <h2>¿Que ofrecemos? </h2>
                     <div className="container_cards">
                         <div className="container_card_horizontal">
-                            <Personalizado animation={animation}/>
+                            <Personalizado animation={animation} origin={"desktop"}/>
                         </div>
                         <div className="container_card_vertical">
-                            <TotalBody animation={animation}/>
+                            <TotalBody animation={animation} origin={"desktop"}/>
                         </div>
                         <div className="container_card_horizontal">
-                            <Boxeo animation={animation}/>
+                            <Boxeo animation={animation} origin={"desktop"}/>
                         </div>
                     </div>
                 </div>
@@ -44,10 +44,10 @@ export const Services = ()=>{
                     <div className='container_cards'>
                         <div className='column1'>
                             <div className="container_card_horizontal">
-                                <Personalizado animation={animation}/>
+                                <Personalizado animation={animation} origin={"mobile"}/>
                             </div>
                             <div className="container_card_horizontal">
-                                <Boxeo animation={animation}/>
+                                <Boxeo animation={animation} origin={"mobile"}/>
                             </div>
                         </div>
                         <div className='column2'>
@@ -55,7 +55,7 @@ export const Services = ()=>{
                                 <h2>¿Que <br/>ofrecemos? </h2>
                             </div>
                             <div className="container_card_vertical">
-                                <TotalBody animation={animation}/>
+                                <TotalBody animation={animation} origin={"mobile"}/>
                             </div>
                         </div>
                     </div>
