@@ -2,7 +2,7 @@ const remera1 = {
     name: 'Remera Titan _diseño1_',
     image: require('../../../assets/images/products/remera1/Rangla F 3.png'),
     characteristics: {
-        price: '$10.000',
+        price: 16000,
         fabric: 'Tela deportiva',
         gender: 'Hombre',
         age: 'Todas las edades',
@@ -13,7 +13,7 @@ const cuellito1 = {
     name: 'Cuellito Titan _diseño1_',
     image: require('../../../assets/images/products/cuellito1/ppal.webp'),
     characteristics: {
-        price: '$8.000',
+        price: 7000,
         fabric: 'Tela deportiva',
         gender: 'Unisex',
         age: 'Todas las edades',
@@ -24,7 +24,7 @@ const cuellito2 = {
     name: 'Cuellito Titan _diseño2_',
     image: require('../../../assets/images/products/cuelltio2/ppal.webp'),
     characteristics: {
-        price: '$8.000',
+        price: 7000,
         fabric: 'Tela deportiva',
         gender: 'Unisex',
         age: 'Todas las edades',

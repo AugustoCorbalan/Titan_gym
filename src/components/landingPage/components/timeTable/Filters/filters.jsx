@@ -24,6 +24,8 @@ export const Filters = ({setDisciplineSelected, id}) =>{
         }
         return ()=>{
             body.removeEventListener("click", handlerClick)
+            body.removeEventListener("touchstart", handlerClick);
+
         }
     },[])
 

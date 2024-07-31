@@ -19,6 +19,9 @@ export const TotalBody = ({animation, origin})=>{
                 }
             }
             body.addEventListener("touchstart", handlerTouch);
+            return ()=>{
+                body.removeEventListener("touchstart", handlerTouch);
+            }
         }
     },[origin])
     useEffect(()=>{

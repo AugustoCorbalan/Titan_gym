@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 export const Boxeo = ({animation, origin})=>{
     const [cardOpen, setCardOpen] = useState(false);
     const [styleCard, setStyleCard] = useState("container_card_inner");
+    
     useEffect(()=>{
         if(origin == "mobile"){
             const body = document.querySelector("body")
@@ -18,6 +19,9 @@ export const Boxeo = ({animation, origin})=>{
                 }
             }
             body.addEventListener("touchstart", handlerTouch);
+            return ()=>{
+                body.removeEventListener("touchstart", handlerTouch);
+            }
         }
     },[origin])
     useEffect(()=>{
@@ -36,7 +40,7 @@ export const Boxeo = ({animation, origin})=>{
                     <img className= 'img_pointer' src={pointerHover} alt='icon pointer'/>
                 </div>
                 <div className="back-end">
-                <div className="container_info">
+                    <div className="container_info">
                         <div className="container_title">
                             <h3>BOXEO</h3>
                         </div>
