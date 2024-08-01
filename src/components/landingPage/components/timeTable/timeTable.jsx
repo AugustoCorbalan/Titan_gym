@@ -13,7 +13,7 @@ export const TimeTable = ()=>{
                 <h2>HORARIOS</h2>
                 <div className='container_table_references_desktop'>
                     <div className='container1'>
-                        <Filters setDisciplineSelected={setDisciplineSelected}/>
+                        <Filters id={'container_ilters_desktop'} setDisciplineSelected={setDisciplineSelected}/>
                         <a className= "callToAction" href='https://wa.me/543547579422' target='_blanck'>
                             CONSULTAR
                         </a>
@@ -43,7 +43,7 @@ export const TimeTable = ()=>{
                 </div>
                 <div className='container_table_references_mobile'>
                     <div className='container_filters_mobile'>
-                        <Filters setDisciplineSelected={setDisciplineSelected}/>
+                        <Filters id={'container_filters_mobile'} setDisciplineSelected={setDisciplineSelected}/>
                     </div>
                     <Table disciplineSelected={disciplineSelected}/>
                     <div className='container_references'>

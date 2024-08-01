@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import {trainings, hours} from './data.js';
 import arrow_down from '../../../../../assets/icons/arrow_down.svg';
 
-export const Filters = ({setDisciplineSelected}) =>{
+export const Filters = ({setDisciplineSelected, id}) =>{
     
     const [training, setTraining] = useState(trainings.noSelected);
     const [hour, setHour] = useState(hours.noSelected);
@@ -12,23 +12,30 @@ export const Filters = ({setDisciplineSelected}) =>{
     useEffect(()=>{
         const body = document.querySelector("body");
         const handlerClick = (event)=>{
-            const container_filters = document.querySelector(".container_filters");
-            if((!container_filters.contains(event.target)) && (menuVisibleTraining || menuVisibleHour)){
+            const container_filters = document.querySelector(`#${id}`);
+            if((!container_filters.contains(event.target))){
                 setMenuVisibleTraining(false);
                 setMenuVisibleHour(false);
             }
         }
-        body.addEventListener("click", handlerClick);
+        body.addEventListener("click", handlerClick); 
+        if(id == 'container_filters_mobile'){
+            body.addEventListener("touchstart", handlerClick);
+        }
         return ()=>{
             body.removeEventListener("click", handlerClick)
+            body.removeEventListener("touchstart", handlerClick);
+
         }
     },[])
 
     const handlerClickVisibleTraining = ()=>{
         setMenuVisibleTraining(!menuVisibleTraining);
+        setMenuVisibleHour(false);
     }
     const handlerClickVisibleHour = ()=>{
         setMenuVisibleHour(!menuVisibleHour);
+        setMenuVisibleTraining(false);
     }
     const handlerClickSelectTraining = (training)=>{
         setTraining(training);
@@ -41,7 +48,7 @@ export const Filters = ({setDisciplineSelected}) =>{
         setMenuVisibleHour(!menuVisibleHour);
     }
     return(
-        <div className="container_filters">
+        <div id={id} className="container_filters">
             <div>
                 <h3>Elgir entrenamiento:</h3>
                 <button className="button_selection" onClick={handlerClickVisibleTraining}>
