@@ -18,7 +18,7 @@ export const Card = ({product})=>{
     const handlerClickConfirmBuy = ()=>{
         if (sizeSelected != '' || sizes == 'Unico' ){
             const text = `Hola Titan! 👋👋%0AQuiero realizar la compra de:%0A- Producto: ${name}%0A- Talle: ${sizeSelected}%0A- Genero: ${gender}%0A- Edad: ${age}%0A%0A¡Gracias! 🙌`;
-            window.open(`https://wa.me/54354747579422?text=${text}`, "_blank")
+            window.open(`https://wa.me/543547579422?text=${text}`, "_blank")
         }else{
             alert("Seleccione un talle")
         }
