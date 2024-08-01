@@ -74,37 +74,41 @@ export const Card = ({product})=>{
                 </div>
                 <div className="container_message_buy">
                     <h2> Confirmación de compra:</h2>
-                    <div className="container_characteristics">
-                        <div className="container_columns">
-                            <div className="column1">
-                                <span>{name}</span>
-                                {
-                                    sizes == 'Unico'?
-                                    <></> :
-                                    <span>TALLE: {sizeSelected}</span>
-                                }
-                                <span>GENERO: {gender}</span>
-                                <span>EDAD: {age}</span>
+                    <div className="container_1">
+                        <div className="container_characteristics">
+                            <div className="container_columns">
+                                <div className="column1">
+                                    <span>{name}</span>
+                                    {
+                                        sizes == 'Unico'?
+                                        <></> :
+                                        <span>TALLE: {sizeSelected}</span>
+                                    }
+                                    <span>GENERO: {gender}</span>
+                                    <span>EDAD: {age}</span>
+                                </div>
+                                <div className="column2">
+                                    <img src={image} alt="Imagen del producto"/>
+                                </div>
                             </div>
-                            <div className="column2">
-                                <img src={image} alt="Imagen del producto"/>
-                            </div>
+                            <span className="price">PRECIO: {`$${price}`}</span>
                         </div>
-                        <span className="price">PRECIO: {`$${price}`}</span>
                     </div>
-                    <div className="container_message">
-                        <span>
-                            {`Se redirigirá a Whatsapp para notificar la compra a 'TITAN' y se le proporcionará
-                            el Alias para realizar la transferencia del 50% ($${price/2}) para la seña del producto.`}
-                            <br/>
-                            {`Al momento de retirar el producto deberá abonar el 50% restante ($${price/2}).`}
-                            <br/><br/>
-                            {`* ¡Pronto podrás realizar todo desde esta página web!`}
-                        </span>
-                    </div>
-                    <div className="container_buttons">
-                        <button className="callToAction confirm_button" onClick={handlerClickConfirmBuy}>Confirmar</button>
-                        <button className="callToAction cancel_button" onClick={()=>setRotate(false)}>X</button>
+                    <div className="container_2">
+                        <div className="container_message">
+                            <span>
+                                {`Se redirigirá a Whatsapp para notificar la compra a 'TITAN' y se le proporcionará
+                                el Alias para realizar la transferencia del 50% ($${price/2}) para la seña del producto.`}
+                                <br/>
+                                {`Al momento de retirar el producto deberá abonar el 50% restante ($${price/2}).`}
+                                <br/><br/>
+                                {`* ¡Pronto podrás realizar todo desde esta página web!`}
+                            </span>
+                        </div>
+                        <div className="container_buttons">
+                            <button className="callToAction confirm_button" onClick={handlerClickConfirmBuy}>Confirmar</button>
+                            <button className="callToAction cancel_button" onClick={()=>setRotate(false)}>X</button>
+                        </div>
                     </div>
                 </div>
             </div>
