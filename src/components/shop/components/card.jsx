@@ -69,7 +69,7 @@ export const Card = ({product})=>{
                                 <button className="callToAction" onClick={handlerClickBuy}>Comprar</button>
                             </div>
                         </div>
-                        <span className="information_message">* Tiene una demora de 15 días.<br/>* Al comprar se abona únicamente el 50% del precio publicado, para la seña.</span>
+                        <span className="information_message">* Tiene una demora de 15 días.<br/>* Al comprar se seña con el 50% del precio publicado.</span>
                     </div>
                 </div>
                 <div className="container_message_buy">
