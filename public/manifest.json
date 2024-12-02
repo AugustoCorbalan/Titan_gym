@@ -9,13 +9,13 @@
     },
     {
       "src": "favicon_background.ico",
-      "type": "image/png",
-      "sizes": "image/x-icon"
+      "type": "image/x-icon",
+      "sizes": "192x192"
     },
     {
       "src": "favicon_background.ico",
-      "type": "image/png",
-      "sizes": "image/x-icon"
+      "type": "image/x-icon",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
